@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "a194df7e-b9ae-467b-a797-6c533c90fba9",
+		"name": "container_id_configuration",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21099247"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/D:/CORELIA/dockerization/container_id/Data/img2.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/file/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"file",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

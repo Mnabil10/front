@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "fc488b80-946a-4a90-8f94-5faa3846cf0e",
+		"name": "chatbot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23859460"
+	},
+	"item": [
+		{
+			"name": "search by date",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8081/byDate/?startDate=2022-04-08&endDate=2022-07-13",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"byDate",
+						""
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2022-04-08"
+						},
+						{
+							"key": "endDate",
+							"value": "2022-07-13"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search by id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "f",
+							"type": "file",
+							"src": "/home/sohayb/taunga_system/ChatBot/api/src/Data/Test/test_by_ID.xlsx"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8081/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/home/sohayb/taunga_system/ChatBot/api/src/Data/Test/test_by_ID.xlsx"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8081/all_details/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"all_details",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search by suspecious",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8081/suspicious/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"suspicious",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

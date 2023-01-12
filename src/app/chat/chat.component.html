@@ -1,0 +1,28 @@
+<div class="chat">
+
+  <div class="chatbox" [hidden]="isShowDiv" [hidden]="isShow">
+    <button type="button" class="btn" (click)=toggleDisplay()>
+      <img src="../../assets/image/close.svg" class="close" alt="">
+    </button>
+    <div style="overflow-y:scroll; height: 450px;">
+      <ng-container *ngFor="let message of messages">
+        <div class="message" [ngClass]="{from: message.author === 'bot',to: message.author === 'user'}">
+          {{ message.content }}
+        </div>
+      </ng-container>
+      <label *ngIf="messages.length == 0; else dialogInfo" for="nameField">Chat Bot</label>
+      <input class="send ms-2" [(ngModel)]="value" (keyup.enter)="sendMessage()" type="text" />
+      <button class="btn" (click)="sendMessage()"><img  src="../../assets/image/Send.svg" alt=""></button>
+      <ng-template #dialogInfo>
+        <span [className]="'float-right'">Total messages: {{ messages.length }}</span>
+      </ng-template>
+
+    </div>
+
+  </div>
+<div class="ms-3 d-flex ">
+  <button  type="button" class="btn chatbtn" (click)=toggleDisplayDiv()>
+    <img src="../../assets/image/chat.svg" alt="">
+  </button>
+</div>
+</div>

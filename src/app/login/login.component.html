@@ -1,0 +1,68 @@
+  <div class="loginform">
+    <div class="container">
+      <div class="row position-relative">
+          <div class="col-lg-3 col-md-2 col-xs-2">
+            <div class="lang ">
+              <select class="form-control" #selctedLang (change)="switchLanguage(selctedLang.value)">
+                <option *ngFor="let language of Translate.getLangs()"
+                [value]="language"
+                [selected]="language === Translate.currentLang">
+                  {{language}}</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-8 col-xs-8 login-box   ">
+              <div class="col-lg-12 col-xs-12 login-key ">
+                <img src="../../assets/image/Docksera spy01-02 1.png" alt="" class="imaglogin mb-4">
+              </div>
+              <div class="col-lg-12 col-xs-12 login-form">
+                  <div class="col-lg-12 col-xs-12 login-form">
+                      <form action="#" [formGroup]="loginFormValidation" (ngSubmit)="Login()">
+                          <div class="form-group formclass">
+                            <input formControlName="email" type="email" placeholder="Email" class="form-control mb-4 inputform" />
+                            <div *ngIf="loginFormValidation.controls['email'].invalid && (loginFormValidation.controls['email'].dirty ||
+                            loginFormValidation.controls['email'].touched)">
+                                <small class="alert text-danger mt-1 errform">*Enter a valid email format</small>
+                            </div>
+                          </div>
+                          <div class="form-group formclass">
+                            <input formControlName="password" type="password" placeholder="Password" class="form-control mb-4 inputform"/>
+                            <div *ngIf="loginFormValidation.controls['password'].invalid && (loginFormValidation.controls['password'].dirty ||
+                            loginFormValidation.controls['password'].touched)">
+                                <small class="alert text-danger mt-1 errform">*Password min length is 5</small>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-between otherform mb-4">
+                            <div>
+                              <input type="checkbox" name="remember_me" id="remember_me" class="">
+                              <label for="remember_me">Remember Me!</label>
+                            </div>
+                            <div>
+                              <a [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active"
+                              routerLink="/forget">
+                                Forgot Password?</a>
+                            </div>
+                          </div>
+                          <div *ngIf="loginErrorMsg !='false'">
+                            <small class="alert text-danger mt-1">{{loginErrorMsg}}</small>
+                        </div>
+                          <div class="col-lg-12 col-xs-12 loginbttm">
+                              <div class="col-lg-6 col-xs-10 login-btm login-button mb-3">
+                                  <button class="btn  bttn">LOG IN</button>
+                              </div>
+                          </div>
+                          <div class="preg">
+                            <p>Don't have an account?<a [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active"
+                              routerLink="/register"> Register</a></p>
+                          </div>
+
+                      </form>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-2 col-xs-2"></div>
+          </div>
+      </div>
+  </div>
+
+
+

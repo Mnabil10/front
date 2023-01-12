@@ -1,0 +1,46 @@
+.chatbox{
+width: 450px;
+height: 500px;
+background: #FFFFFF;
+border: 1px solid #B71F25;
+border-radius: 9px;
+}
+.close{
+  width: 26.83px;
+  height: 26.83px;
+}
+.btn{
+  background-color: #FFFFFF;
+}
+.message {
+  border-radius: 0px 6px 6px 6px;
+  margin: 0 15px 20px;
+  padding: 10px 20px;
+  position: relative;
+  font-size: 20px;
+}
+.message.to {
+  background: #FFFFFF;
+  color: #B71F25;
+  border: 1px solid #B71F25;
+  margin-left: 100px;
+  text-align: right;
+}
+.message.from {
+  background: #B71F25;
+  border-radius: 0px 6px 6px 6px;
+  color: #FFFFFF;
+  margin-right: 100px;
+}
+.message.to + .message.to,
+.message.from + .message.from {
+  margin-top: -10px;
+}
+.send{
+  background: #FFFFFF;
+  border-top: 3px solid black;
+}
+
+.chatbtn{
+  align-items:flex-end;
+}

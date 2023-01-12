@@ -1,0 +1,17 @@
+.copy{
+  background: #FFFFFF;
+  width: 100%;
+}
+.logout{
+  width: 77px;
+  height: 35px;
+  background: #B71F25;
+  border-radius: 20px;
+  border: 1.5px solid #FFFFFF;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}

@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "845e1ac9-449f-44cd-9e20-af43591cbabf",
+		"name": "Voice-to-text",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21099247"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "uploaded_file",
+							"type": "file",
+							"src": "/home/oknashar/Downloads/voice totext/voices/Dec 18, 1.05 PM_.wav"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/speech-to-text/en",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"speech-to-text",
+						"en"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

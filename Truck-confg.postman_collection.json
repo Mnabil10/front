@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "a686c293-4466-48db-8eda-0af40b28df4a",
+		"name": "Truck-confg",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21099247"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "in_file",
+							"type": "file",
+							"src": "/D:/Corelia/tanga crawd/Final/api/Data/truck.mp4"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
