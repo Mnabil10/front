@@ -10,11 +10,11 @@ import { SecurityComponent } from './security/security.component';
 import { VTTComponent } from './vtt/vtt.component';
 
 const routes: Routes = [
-   { path: '', component: VTTComponent, canActivate: [AuthGuardService] },
+   { path: '', component: SecurityComponent, canActivate: [AuthGuardService] },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
-  { path: 'security', component: SecurityComponent, canActivate: [AuthGuardService] },
-  { path: 'vtt', component: VTTComponent, canActivate: [AuthGuardService]},
+  { path: 'check', component: SecurityComponent, canActivate: [AuthGuardService] },
+  { path: 'http', component: VTTComponent, canActivate: [AuthGuardService]},
   { path: 'company', component: CompanyComponent, canActivate: [AuthGuardService] },
   { path: 'container', component: ContainerComponent, canActivate: [AuthGuardService] },
   { path: '**', component: ErrorComponent },

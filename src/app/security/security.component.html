@@ -39,18 +39,18 @@
   <div class="col-lg-3 navside">
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       <li class="nav-item mb-4 ms-4 mt-4 navSide-item ">
-        <a class="nav-link" href="https://app.powerbi.com/view?r=eyJrIjoiZTE5NWQ3M2ItMjE5NC00N2NjLTlkMjQtMTU2Mjk2NDJhY2NjIiwidCI6IjE5ZjU0OGVjLTM0NTYtNGUxMy04MmNkLTI4MGE3MGE3NjZkZiJ9" target="_blank"><img class="" src="../../assets/image/Dashboard.svg" alt=""> <span class="ms-2">{{'Dashboard'|translate}}</span></a>
+        <a class="nav-link" href="https://app.powerbi.com/view?r=eyJrIjoiMmMwMjY3ZjItNzU5MS00YTdhLWIxZmQtMGEwZmQ3MDZhYjVjIiwidCI6IjE5ZjU0OGVjLTM0NTYtNGUxMy04MmNkLTI4MGE3MGE3NjZkZiJ9" target="_blank"><img class="" src="../../assets/image/Dashboard.svg" alt=""> <span class="ms-2">{{'Firewall logs'|translate}}</span></a>
 
       </li>
       <li class="nav-item mb-4 ms-2 navSide-item">
-        <a routerLink="/security" routerLinkActive="active" class="nav-link">
-          <img class=" ms-3" src="../../assets/image/cam.svg" alt=""> <span class="ms-2">Security cam cloud</span>
+        <a routerLink="/check" routerLinkActive="active" class="nav-link">
+          <img class=" ms-3" src="../../assets/image/cam.svg" alt=""> <span class="ms-2">Check Container</span>
         </a>
 
       </li>
       <li class="nav-item mb-4 ms-4 navSide-item">
-        <a routerLink="/vtt" routerLinkActive="active" class="nav-link">
-        <img class="" src="../../assets/image/voice.svg" alt=""> <span class="">Voice to text VTT</span>
+        <a routerLink="/http" routerLinkActive="active" class="nav-link">
+        <img class="" src="../../assets/image/voice.svg" alt=""> <span class="">HTTP Logs</span>
       </a>
       </li>
       <li class="nav-item mb-4 ms-4 navSide-item">
@@ -71,7 +71,7 @@
     </div>
   </div>
   <div class="col-lg-6">
-    <div class="row">
+    <!-- <div class="row">
       <div class="col-lg-6 mt-4">
         <h3 class="dash mt-3 ms-3">Security cam cloud</h3>
         <p class="welcom ms-3">Welcome to Tangier port management platform.</p>
@@ -105,44 +105,134 @@
               </ul>
             </div>
           </div>
-          <!-- <div id='controls' style="height: 1px;">
-            <progress id='progress-bar' min='0' max='100' value='50' style="width: 100%; height: 6px; color: red;"></progress>
-          </div>
-          <div class="ms-3" style="width: 715px; height: 49.03px; background: #121212;">
-          </div>
-        </div> -->
+
 
     </div>
 
   </div>
 
-</div>
+</div> -->
+<!-- <div class="col-lg-12 cardshadow ">
+  <h1>Check Container</h1>
+
+
+    <div class="form-group">
+      <label for="start">Start date:</label>
+
+      <input type="text"  formControlName="trip-start"
+      value="2022-10-05"
+      min="2012-01-01" max="2023-12-31" >
+    </div>
+    <div class="form-group">
+      <label for="end">End date:</label>
+
+      <input type="text"
+      value="2022-10-28"
+      min="2012-01-01" max="2023-12-31" required>
+    </div>
+
+    <div class="form-group">
+      <label >Container ID: </label>
+      <input type="text"  ><br><br>
+      </div>
+
+
+
+
+    <div class="form-group">
+      <label  >Choose the model :</label>
+      <div class="col-sm-10">
+        <select  >
+          <option value="Choose the model" selected>Choose the model </option>
+          <option value="Gradient Boosting" >Gradient Boosting</option>
+          <option value="Decision Tree"> Decision Tree </option>
+          <option value="Random Forests"> Random Forests </option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button  class="btn btn-success">Submit</button>
+      </div>
+    </div>
+
+  </form>
+</div> -->
+<!-- <div>
+  <h2> Container ID   : <i>  </i></h2>
+	<h2> Your Prediction   : <i> {{data?.prediction}} </i></h2>
+  <h3> Model Used for prediction is    : <i> {{data?.Model}} </i></h3>
+</div> -->
+      <div class="form-holder mt-4 ms-4">
+          <div class="form-content ">
+              <div class="form-items">
+                <h1>Check Container</h1>
+                <form action="#" [formGroup]="addForm" (ngSubmit)="submit()" class="">
+
+                      <div class="col-md-12 mt-4">
+                         <input class="form-control" type="text" formControlName="trip-start" placeholder="mm/dd/yyyy" required>
+
+                      </div>
+
+                      <div class="col-md-12 mt-4">
+                          <input class="form-control" type="text" formControlName="trip-end" placeholder="mm/dd/yyyy" required>
+
+                      </div>
+
+                     <div class="col-md-12 mt-4">
+                          <select class="form-select mt-3" formControlName="modelType" required >
+                                <option selected disabled value="">Choose the model</option>
+                                <option value="Gradient Boosting" >Gradient Boosting</option>
+                                <option value="Decision Tree"> Decision Tree</option>
+                                <option value="Random Forests"> Random Forests</option>
+                         </select>
+
+                     </div>
+
+
+                     <div class="col-md-12 mt-4">
+                        <input class="form-control" type="text" formControlName="ContainerID" placeholder="ContainerID" required>
+                     </div>
+                      <div class="form-button mt-3 ">
+                          <button  type="submit" class="btn btn-danger">Submit</button>
+                      </div>
+                  </form>
+                  <div class="col-lg-12 mt-5   result">
+                    <h3> ContainerID : {{data.Container_ID}}</h3>
+                    <h3>Your Prediction : {{data.prediction}}</h3>
+                    <h3>Model Used for prediction is : {{data.Model}}</h3>
+                    <h3>Details :
+                      <p> deba_date : {{data.Details.deba_date}}</p>
+                      <p> emba_date : {{data.Details.emba_date}}</p>
+                      <p> freq_move : {{data.Details.freq_move}}</p>
+                      <p> freq_user : {{data.Details.freq_user}}</p>
+                      <p> http_hits : {{data.Details.http_hits}}</p>
+                      <p> move_set : {{data.Details.move_set}}</p>
+                      <p> no_users : {{data.Details.no_users}}</p>
+                       <!-- "cont": "EISU8549574",
+                      "deba_date": "20221005",
+                      "emba_date": "20221028",
+                      "freq_move": "BASI",
+                      "freq_user": "OSCAR     ",
+                      "http_hits": "0",
+                      "move_set": "['DEBA', 'ALOD', 'CHAL', 'BASI', 'ABSI', 'BASI', 'CHAL', 'SPCA', 'EVCA', 'APRO', 'CHES', 'EMBA']",
+                      "no_users": "9" -->
+                    </h3>
+
+                  </div>
+              </div>
+
+          </div>
+
+      </div>
+
+
 <div class="mt-5 ms-4 footer">
   <app-footer></app-footer>
 </div>
 </div>
-<div class="col-lg-3 mt-5">
-  <div class="sidebar">
-    <div class="mt-4"><p class="ptitle ms-2 mt-3">{{'observation'|translate}} :</p></div>
-    <div class="d-flex ms-4">
-      <img src="../../assets/image/comp.svg" alt="">
-      <span class="ms-2 chartnumber">15000</span>
-    </div>
-    <img class="ms-3 mt-2 mb-2" src="../../assets/image/chartside.png" alt="">
-    <div class="d-flex ms-3 text-center">
-      <div class="ms-2 datachart">
-        <img src="../../assets/image/green.svg" alt=""> <span class="">{{'Normal'|translate}}</span>
-      </div>
-      <div class="ms-2 datachart">
-        <img src="../../assets/image/red.svg" alt=""> <span class="">{{'Unnormal'|translate}}</span>
-      </div>
-  </div>
-  <div class="col-lg-3 ms-3">
-    <app-chat></app-chat>
-  </div>
-</div>
 
-</div>
 
 </div>
 

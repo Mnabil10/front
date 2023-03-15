@@ -27,6 +27,7 @@ import {VgOverlayPlayModule} from '@videogular/ngx-videogular/overlay-play';
 import {VgBufferingModule} from '@videogular/ngx-videogular/buffering';
 import {AngularBotModule} from './angular-bot/angular-bot.module'
 import { CommonModule } from '@angular/common';
+import { NgxCsvParserModule } from 'ngx-csv-parser';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import { CommonModule } from '@angular/common';
     VgOverlayPlayModule,
     VgBufferingModule,
     AngularBotModule,
-    CommonModule
+    CommonModule,
+    NgxCsvParserModule,
 
 
   ],

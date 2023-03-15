@@ -1,8 +1,8 @@
 
 <nav class="navbar navbar-expand-lg bg-light col-lg-12 col-md-12 col-xsm-12">
   <div class="container-fluid col-xsm-12">
-    <span class="me-4 col-sm-2 btnsidebar"><img src="../../assets/image/vector.svg" alt=""></span>
-    <a class="navbar-brand me-4 col-xsm-2" href="#"><img src="../../assets/image/Docksera navbar.png" alt=""></a>
+    <span class="me-4 "><img src="../../assets/image/vector.svg" alt=""></span>
+    <a class="navbar-brand me-4 " href="#"><img src="../../assets/image/Docksera navbar.png" alt=""></a>
     <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button> -->
@@ -39,17 +39,17 @@
   <div class="col-lg-3 navside">
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       <li class="nav-item mb-4 ms-4 mt-4 navSide-item ">
-        <a class="nav-link" href="https://app.powerbi.com/view?r=eyJrIjoiZTE5NWQ3M2ItMjE5NC00N2NjLTlkMjQtMTU2Mjk2NDJhY2NjIiwidCI6IjE5ZjU0OGVjLTM0NTYtNGUxMy04MmNkLTI4MGE3MGE3NjZkZiJ9" target="_blank"><img class="" src="../../assets/image/Dashboard.svg" alt=""> <span class="ms-2">{{'Dashboard'|translate}}</span></a>
+        <a class="nav-link" href="https://app.powerbi.com/view?r=eyJrIjoiMmMwMjY3ZjItNzU5MS00YTdhLWIxZmQtMGEwZmQ3MDZhYjVjIiwidCI6IjE5ZjU0OGVjLTM0NTYtNGUxMy04MmNkLTI4MGE3MGE3NjZkZiJ9" target="_blank"><img class="" src="../../assets/image/Dashboard.svg" alt=""> <span class="ms-2">{{'Firewall logs'|translate}}</span></a>
       </li>
       <li class="nav-item mb-4 ms-4 navSide-item">
-        <a routerLink="/security" routerLinkActive="active" class="nav-link">
-          <img class="" src="../../assets/image/cam.svg" alt=""> <span class="ms-2">{{'Security cam cloud'|translate}}</span>
+        <a routerLink="/check" routerLinkActive="active" class="nav-link">
+          <img class="" src="../../assets/image/cam.svg" alt=""> <span class="ms-2">{{'Check Container'|translate}}</span>
         </a>
 
       </li>
       <li class="nav-item mb-4 ms-2 navSide-item">
-        <a routerLink="/vtt" routerLinkActive="active" class="nav-link">
-        <img class=" ms-3" src="../../assets/image/voice.svg" alt=""> <span class="ms-2">{{'Voice to text VTT'|translate}}</span>
+        <a routerLink="/http" routerLinkActive="active" class="nav-link">
+        <img class=" ms-3" src="../../assets/image/voice.svg" alt=""> <span class="ms-2">{{'HTTP Logs'|translate}}</span>
       </a>
       </li>
       <li class="nav-item mb-4 ms-4 navSide-item">
@@ -72,185 +72,1116 @@
   <div class="col-lg-6">
     <div class="row">
       <div class="col-lg-6 mt-4">
-        <h3 class="dash mt-3 ms-3">{{'Voice to text'|translate}}</h3>
+        <h3 class="dash mt-3 ms-3">{{'HTTP Logs'|translate}}</h3>
         <p class="welcom ms-3">{{'Welcome to Tangier port management platform.'|translate}}</p>
 
         <div class="cardtable mt-2 col-lg-6 ms-3">
-          <div class="datetable d-flex ms-2 pt-2 mb-2">
-            <span class="tableP  me-1">{{'Voice to text'|translate}}  <span class="tablespan ms-1"> {{'need to action'|translate}} </span> </span>
-            <span class="ms-3">{{'From'|translate}}</span><input class="ms-2" type="date" name="date" placeholder="dd-mm-yyyy" >
-            <span class="ms-3">{{'To'|translate}}</span><input class="ms-2" type="date" name="date" placeholder="dd-mm-yyyy" >
-          </div>
+
           <div style="overflow-y:scroll; height: 450px;">
             <table  class="table text-center">
               <thead>
                   <tr>
                       <th scope="col" style="width: 77px;">{{'Date-Time'|translate}}</th>
                       <th scope="col" style="width: 56px;">Cont-id</th>
-                      <th scope="col" style="width: 53px;">Duration</th>
-                      <th scope="col" style="width: 64px;">Dialogue</th>
-                      <th scope="col" style="width: 57px;">{{'country'|translate}}</th>
-                      <th scope="col" style="width: 109px;">{{'Shipping comp'|translate}}</th>
-                      <th scope="col" style="width: 48px;">{{'Status'|translate}}</th>
+                      <th scope="col" style="width: 53px;">IP</th>
+                      <th scope="col" style="width: 64px;">USER</th>
+                      <th scope="col" style="width: 57px;">{{'Respnose'|translate}}</th>
+                      <th scope="col" style="width: 48px;">{{'Action'|translate}}</th>
                   </tr>
               </thead>
               <tbody>
                   <tr >
                       <td >
-                        <div class="text-center"><p style="width: 77px;">22-11-2022</p>
-                          <p class="timeTable text-center">02:00 PM</p>
+                        <div class="text-center"><p style="width: 77px;">Saturday, January 28, 2023</p>
+
                         </div>
                       </td>
                       <td style="width: 69px;" class="text-center">tllu1265983</td>
-                      <td style="width: 53px;" class="text-center">00:02:34</td>
-                      <td style="width: 152px;" class="text-center">employee/Customs officer</td>
-                      <td style="width: 34px;" class="text-center">China</td>
-                      <td style="width: 69px;" class="text-center">China comp</td>
-                      <td style="width: 56px;" class="text-center">Unnormal</td>
+                      <td style="width: 53px;" class="text-center">192.168.14.138</td>
+                      <td style="width: 152px;" class="text-center">DEZDAV</td>
+                      <td style="width: 34px;" class="text-center">200</td>
+
+                      <td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
                   </tr>
                   <tr >
                     <td >
-                      <div class="text-center"><p style="width: 77px;">22-11-2022</p>
-                        <p class="timeTable text-center">02:00 PM</p>
+                      <div class="text-center"><p style="width: 77px;">Saturday, January 28, 2023</p>
+
                       </div>
                     </td>
                     <td style="width: 69px;" class="text-center">tllu1265983</td>
-                    <td style="width: 53px;" class="text-center">00:02:34</td>
-                    <td style="width: 152px;" class="text-center">employee/Customs officer</td>
-                    <td style="width: 34px;" class="text-center">China</td>
-                    <td style="width: 69px;" class="text-center">China comp</td>
-                    <td style="width: 56px;" class="text-center">Unnormal</td>
+                    <td style="width: 53px;" class="text-center">192.168.14.138</td>
+                    <td style="width: 152px;" class="text-center">DEZDAV</td>
+                    <td style="width: 34px;" class="text-center">200</td>
+
+                    <td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
                 </tr>
                 <tr >
                   <td >
-                    <div class="text-center"><p style="width: 77px;">22-11-2022</p>
-                      <p class="timeTable text-center">02:00 PM</p>
+                    <div class="text-center"><p style="width: 77px;">Saturday, January 28, 2023</p>
+
                     </div>
                   </td>
                   <td style="width: 69px;" class="text-center">tllu1265983</td>
-                  <td style="width: 53px;" class="text-center">00:02:34</td>
-                  <td style="width: 152px;" class="text-center">employee/Customs officer</td>
-                  <td style="width: 34px;" class="text-center">China</td>
-                  <td style="width: 69px;" class="text-center">China comp</td>
-                  <td style="width: 56px;" class="text-center">Unnormal</td>
+                  <td style="width: 53px;" class="text-center">192.168.14.138</td>
+                  <td style="width: 152px;" class="text-center">DEZDAV</td>
+                  <td style="width: 34px;" class="text-center">200</td>
+
+                  <td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
               </tr>
               <tr >
                 <td >
-                  <div class="text-center"><p style="width: 77px;">22-11-2022</p>
-                    <p class="timeTable text-center">02:00 PM</p>
+                  <div class="text-center"><p style="width: 77px;">Wednesday, January 25, 2023</p>
+
                   </div>
                 </td>
                 <td style="width: 69px;" class="text-center">tllu1265983</td>
-                <td style="width: 53px;" class="text-center">00:02:34</td>
-                <td style="width: 152px;" class="text-center">employee/Customs officer</td>
-                <td style="width: 34px;" class="text-center">China</td>
-                <td style="width: 69px;" class="text-center">China comp</td>
-                <td style="width: 56px;" class="text-center">Unnormal</td>
+                <td style="width: 53px;" class="text-center">192.168.14.138</td>
+                <td style="width: 152px;" class="text-center">PREPANAV</td>
+                <td style="width: 34px;" class="text-center">200</td>
+
+                <td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
             </tr>
             <tr >
               <td >
-                <div class="text-center"><p style="width: 77px;">22-11-2022</p>
-                  <p class="timeTable text-center">02:00 PM</p>
+                <div class="text-center"><p style="width: 77px;">Wednesday, January 25, 2023</p>
+
                 </div>
               </td>
               <td style="width: 69px;" class="text-center">tllu1265983</td>
-              <td style="width: 53px;" class="text-center">00:02:34</td>
-              <td style="width: 152px;" class="text-center">employee/Customs officer</td>
-              <td style="width: 34px;" class="text-center">China</td>
-              <td style="width: 69px;" class="text-center">China comp</td>
-              <td style="width: 56px;" class="text-center">Unnormal</td>
+              <td style="width: 53px;" class="text-center">192.168.14.106</td>
+              <td style="width: 152px;" class="text-center">PREPANAV</td>
+              <td style="width: 34px;" class="text-center">200</td>
+
+              <td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
           </tr>
           <tr >
             <td >
-              <div class="text-center"><p style="width: 77px;">22-11-2022</p>
-                <p class="timeTable text-center">02:00 PM</p>
+              <div class="text-center"><p style="width: 77px;">Wednesday, January 25, 2023</p>
+
               </div>
             </td>
             <td style="width: 69px;" class="text-center">tllu1265983</td>
-            <td style="width: 53px;" class="text-center">00:02:34</td>
-            <td style="width: 152px;" class="text-center">employee/Customs officer</td>
-            <td style="width: 34px;" class="text-center">China</td>
-            <td style="width: 69px;" class="text-center">China comp</td>
-            <td style="width: 56px;" class="text-center">Unnormal</td>
+            <td style="width: 53px;" class="text-center">192.168.14.106</td>
+            <td style="width: 152px;" class="text-center">PREPANAV</td>
+            <td style="width: 34px;" class="text-center">200</td>
+
+            <td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
         </tr>
         <tr >
           <td >
-            <div class="text-center"><p style="width: 77px;">22-11-2022</p>
-              <p class="timeTable text-center">02:00 PM</p>
+            <div class="text-center"><p style="width: 77px;">Wednesday, January 25, 2023</p>
+
             </div>
           </td>
           <td style="width: 69px;" class="text-center">tllu1265983</td>
-          <td style="width: 53px;" class="text-center">00:02:34</td>
-          <td style="width: 152px;" class="text-center">employee/Customs officer</td>
-          <td style="width: 34px;" class="text-center">China</td>
-          <td style="width: 69px;" class="text-center">China comp</td>
-          <td style="width: 56px;" class="text-center">Unnormal</td>
+          <td style="width: 53px;" class="text-center">192.168.14.106</td>
+          <td style="width: 152px;" class="text-center">FICPAT</td>
+          <td style="width: 34px;" class="text-center">200</td>
+
+          <td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
       </tr>
       <tr >
         <td >
-          <div class="text-center"><p style="width: 77px;">22-11-2022</p>
-            <p class="timeTable text-center">02:00 PM</p>
+          <div class="text-center"><p style="width: 77px;">Saturday, January 14, 2023</p>
+
           </div>
         </td>
         <td style="width: 69px;" class="text-center">tllu1265983</td>
-        <td style="width: 53px;" class="text-center">00:02:34</td>
-        <td style="width: 152px;" class="text-center">employee/Customs officer</td>
-        <td style="width: 34px;" class="text-center">China</td>
-        <td style="width: 69px;" class="text-center">China comp</td>
-        <td style="width: 56px;" class="text-center">Unnormal</td>
+        <td style="width: 53px;" class="text-center">192.168.14.106</td>
+        <td style="width: 152px;" class="text-center">FICPAT</td>
+        <td style="width: 34px;" class="text-center">200</td>
+
+        <td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
     </tr>
     <tr >
       <td >
-        <div class="text-center"><p style="width: 77px;">22-11-2022</p>
-          <p class="timeTable text-center">02:00 PM</p>
+        <div class="text-center"><p style="width: 77px;">Saturday, January 21, 2023</p>
+
         </div>
       </td>
       <td style="width: 69px;" class="text-center">tllu1265983</td>
-      <td style="width: 53px;" class="text-center">00:02:34</td>
-      <td style="width: 152px;" class="text-center">employee/Customs officer</td>
-      <td style="width: 34px;" class="text-center">China</td>
-      <td style="width: 69px;" class="text-center">China comp</td>
-      <td style="width: 56px;" class="text-center">Unnormal</td>
+      <td style="width: 53px;" class="text-center">192.168.14.86</td>
+      <td style="width: 152px;" class="text-center">FICPAT</td>
+      <td style="width: 34px;" class="text-center">200</td>
+
+      <td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
   </tr>
                   <tr >
                     <td >
-                      <div class="text-center"><p style="width: 77px;">22-11-2022</p>
-                        <p class="timeTable text-center">02:00 PM</p>
+                      <div class="text-center"><p style="width: 77px;">Saturday, January 28, 2023</p>
+
                       </div>
                     </td>
                     <td style="width: 69px;" class="text-center">tllu1265983</td>
-                    <td style="width: 53px;" class="text-center">00:02:34</td>
-                    <td style="width: 152px;" class="text-center">employee/Customs officer</td>
-                    <td style="width: 34px;" class="text-center">China</td>
-                    <td style="width: 69px;" class="text-center">China comp</td>
-                    <td style="width: 56px;" class="text-center">Unnormal</td>
+                    <td style="width: 53px;" class="text-center">192.168.14.86</td>
+                    <td style="width: 152px;" class="text-center">FICPAT</td>
+                    <td style="width: 34px;" class="text-center">200</td>
+
+                    <td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
                 </tr>
                 <tr >
                   <td >
-                    <div class="text-center"><p style="width: 77px;">22-11-2022</p>
-                      <p class="timeTable text-center">02:00 PM</p>
+                    <div class="text-center"><p style="width: 77px;">Saturday, January 28, 2023</p>
+
                     </div>
                   </td>
                   <td style="width: 69px;" class="text-center">tllu1265983</td>
-                  <td style="width: 53px;" class="text-center">00:02:34</td>
-                  <td style="width: 152px;" class="text-center">employee/Customs officer</td>
-                  <td style="width: 34px;" class="text-center">China</td>
-                  <td style="width: 69px;" class="text-center">China comp</td>
-                  <td style="width: 56px;" class="text-center">Unnormal</td>
+                  <td style="width: 53px;" class="text-center">192.168.14.86</td>
+                  <td style="width: 152px;" class="text-center">GATE1DU</td>
+                  <td style="width: 34px;" class="text-center">200</td>
+
+                  <td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
               </tr>
               <tr >
                 <td >
-                  <div class="text-center"><p style="width: 77px;">22-11-2022</p>
-                    <p class="timeTable ">02:00 PM</p>
+                  <div class="text-center"><p style="width: 77px;">Saturday, January 28, 2023</p>
+
                   </div>
                 </td>
                 <td style="width: 69px;" class="text-center">tllu1265983</td>
-                <td style="width: 53px;" class="text-center">00:02:34</td>
-                <td style="width: 152px;" class="text-center">employee/Customs officer</td>
-                <td style="width: 34px;" class="text-center">China</td>
-                <td style="width: 69px;" class="text-center">China comp</td>
-                <td style="width: 56px;" class="text-center">Unnormal</td>
+                <td style="width: 53px;" class="text-center">192.168.14.86</td>
+                <td style="width: 152px;" class="text-center">GATE1DU</td>
+                <td style="width: 34px;" class="text-center">200</td>
+
+                <td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
             </tr>
+            <tr >
+              <td >
+                <div class="text-center"><p style="width: 77px;">Saturday, January 28, 2023</p>
+
+                </div>
+              </td>
+              <td style="width: 69px;" class="text-center">tllu1265983</td>
+              <td style="width: 53px;" class="text-center">192.168.14.138</td>
+              <td style="width: 152px;" class="text-center">DEZDAV</td>
+              <td style="width: 34px;" class="text-center">200</td>
+
+              <td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+          </tr>
+          <tr >
+            <td >
+              <div class="text-center"><p style="width: 77px;">Saturday, January 28, 2023</p>
+
+              </div>
+            </td>
+            <td style="width: 69px;" class="text-center">tllu1265983</td>
+            <td style="width: 53px;" class="text-center">192.168.14.138</td>
+            <td style="width: 152px;" class="text-center">DEZDAV</td>
+            <td style="width: 34px;" class="text-center">200</td>
+
+            <td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+        </tr>
+        <tr >
+          <td >
+            <div class="text-center"><p style="width: 77px;">Saturday, January 28, 2023</p>
+
+            </div>
+          </td>
+          <td style="width: 69px;" class="text-center">tllu1265983</td>
+          <td style="width: 53px;" class="text-center">192.168.14.138</td>
+          <td style="width: 152px;" class="text-center">DEZDAV</td>
+          <td style="width: 34px;" class="text-center">200</td>
+
+          <td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+      </tr>
+      <tr >
+        <td >
+          <div class="text-center"><p style="width: 77px;">Wednesday, January 25, 2023</p>
+
+          </div>
+        </td>
+        <td style="width: 69px;" class="text-center">tllu1265983</td>
+        <td style="width: 53px;" class="text-center">192.168.14.138</td>
+        <td style="width: 152px;" class="text-center">PREPANAV</td>
+        <td style="width: 34px;" class="text-center">200</td>
+
+        <td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+    </tr>
+    <tr >
+      <td >
+        <div class="text-center"><p style="width: 77px;">Wednesday, January 25, 2023</p>
+
+        </div>
+      </td>
+      <td style="width: 69px;" class="text-center">tllu1265983</td>
+      <td style="width: 53px;" class="text-center">192.168.14.106</td>
+      <td style="width: 152px;" class="text-center">PREPANAV</td>
+      <td style="width: 34px;" class="text-center">200</td>
+
+      <td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+  </tr>
+  <tr >
+    <td >
+      <div class="text-center"><p style="width: 77px;">Wednesday, January 25, 2023</p>
+
+      </div>
+    </td>
+    <td style="width: 69px;" class="text-center">tllu1265983</td>
+    <td style="width: 53px;" class="text-center">192.168.14.106</td>
+    <td style="width: 152px;" class="text-center">PREPANAV</td>
+    <td style="width: 34px;" class="text-center">200</td>
+
+    <td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+  <td >
+    <div class="text-center"><p style="width: 77px;">Wednesday, January 25, 2023</p>
+
+    </div>
+  </td>
+  <td style="width: 69px;" class="text-center">tllu1265983</td>
+  <td style="width: 53px;" class="text-center">192.168.14.106</td>
+  <td style="width: 152px;" class="text-center">FICPAT</td>
+  <td style="width: 34px;" class="text-center">200</td>
+
+  <td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+  <div class="text-center"><p style="width: 77px;">Saturday, January 14, 2023</p>
+
+  </div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.106</td>
+<td style="width: 152px;" class="text-center">FICPAT</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+<div class="text-center"><p style="width: 77px;">Saturday, January 21, 2023</p>
+
+</div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.86</td>
+<td style="width: 152px;" class="text-center">FICPAT</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+          <tr >
+            <td >
+              <div class="text-center"><p style="width: 77px;">Saturday, January 28, 2023</p>
+
+              </div>
+            </td>
+            <td style="width: 69px;" class="text-center">tllu1265983</td>
+            <td style="width: 53px;" class="text-center">192.168.14.86</td>
+            <td style="width: 152px;" class="text-center">FICPAT</td>
+            <td style="width: 34px;" class="text-center">200</td>
+
+            <td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+        </tr>
+        <tr >
+          <td >
+            <div class="text-center"><p style="width: 77px;">Saturday, January 28, 2023</p>
+
+            </div>
+          </td>
+          <td style="width: 69px;" class="text-center">tllu1265983</td>
+          <td style="width: 53px;" class="text-center">192.168.14.86</td>
+          <td style="width: 152px;" class="text-center">GATE1DU</td>
+          <td style="width: 34px;" class="text-center">200</td>
+
+          <td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+      </tr>
+      <tr >
+        <td >
+          <div class="text-center"><p style="width: 77px;">Saturday, January 28, 2023</p>
+
+          </div>
+        </td>
+        <td style="width: 69px;" class="text-center">tllu1265983</td>
+        <td style="width: 53px;" class="text-center">192.168.14.86</td>
+        <td style="width: 152px;" class="text-center">GATE1DU</td>
+        <td style="width: 34px;" class="text-center">200</td>
+
+        <td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+    </tr>
+    <tr >
+      <td >
+        <div class="text-center"><p style="width: 77px;">Saturday, January 28, 2023</p>
+
+        </div>
+      </td>
+      <td style="width: 69px;" class="text-center">tllu1265983</td>
+      <td style="width: 53px;" class="text-center">192.168.14.138</td>
+      <td style="width: 152px;" class="text-center">DEZDAV</td>
+      <td style="width: 34px;" class="text-center">200</td>
+
+      <td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+  </tr>
+  <tr >
+    <td >
+      <div class="text-center"><p style="width: 77px;">Saturday, January 28, 2023</p>
+
+      </div>
+    </td>
+    <td style="width: 69px;" class="text-center">tllu1265983</td>
+    <td style="width: 53px;" class="text-center">192.168.14.138</td>
+    <td style="width: 152px;" class="text-center">DEZDAV</td>
+    <td style="width: 34px;" class="text-center">200</td>
+
+    <td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+  <td >
+    <div class="text-center"><p style="width: 77px;">Saturday, January 28, 2023</p>
+
+    </div>
+  </td>
+  <td style="width: 69px;" class="text-center">tllu1265983</td>
+  <td style="width: 53px;" class="text-center">192.168.14.138</td>
+  <td style="width: 152px;" class="text-center">DEZDAV</td>
+  <td style="width: 34px;" class="text-center">200</td>
+
+  <td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+  <div class="text-center"><p style="width: 77px;">Wednesday, January 25, 2023</p>
+
+  </div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.138</td>
+<td style="width: 152px;" class="text-center">PREPANAV</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+<div class="text-center"><p style="width: 77px;">Wednesday, January 25, 2023</p>
+
+</div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.106</td>
+<td style="width: 152px;" class="text-center">PREPANAV</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+<div class="text-center"><p style="width: 77px;">Wednesday, January 25, 2023</p>
+
+</div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.106</td>
+<td style="width: 152px;" class="text-center">PREPANAV</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+<div class="text-center"><p style="width: 77px;">Wednesday, January 25, 2023</p>
+
+</div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.106</td>
+<td style="width: 152px;" class="text-center">FICPAT</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+<div class="text-center"><p style="width: 77px;">Saturday, January 14, 2023</p>
+
+</div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.106</td>
+<td style="width: 152px;" class="text-center">FICPAT</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+<div class="text-center"><p style="width: 77px;">Saturday, January 21, 2023</p>
+
+</div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.86</td>
+<td style="width: 152px;" class="text-center">FICPAT</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+  <tr >
+    <td >
+      <div class="text-center"><p style="width: 77px;">Saturday, January 28, 2023</p>
+
+      </div>
+    </td>
+    <td style="width: 69px;" class="text-center">tllu1265983</td>
+    <td style="width: 53px;" class="text-center">192.168.14.86</td>
+    <td style="width: 152px;" class="text-center">FICPAT</td>
+    <td style="width: 34px;" class="text-center">200</td>
+
+    <td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+  <td >
+    <div class="text-center"><p style="width: 77px;">Saturday, January 28, 2023</p>
+
+    </div>
+  </td>
+  <td style="width: 69px;" class="text-center">tllu1265983</td>
+  <td style="width: 53px;" class="text-center">192.168.14.86</td>
+  <td style="width: 152px;" class="text-center">GATE1DU</td>
+  <td style="width: 34px;" class="text-center">200</td>
+
+  <td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+  <div class="text-center"><p style="width: 77px;">Saturday, January 28, 2023</p>
+
+  </div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.86</td>
+<td style="width: 152px;" class="text-center">GATE1DU</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+  <td >
+    <div class="text-center"><p style="width: 77px;">Saturday, January 28, 2023</p>
+
+    </div>
+  </td>
+  <td style="width: 69px;" class="text-center">tllu1265983</td>
+  <td style="width: 53px;" class="text-center">192.168.14.138</td>
+  <td style="width: 152px;" class="text-center">DEZDAV</td>
+  <td style="width: 34px;" class="text-center">200</td>
+
+  <td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+  <div class="text-center"><p style="width: 77px;">Saturday, January 28, 2023</p>
+
+  </div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.138</td>
+<td style="width: 152px;" class="text-center">DEZDAV</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+<div class="text-center"><p style="width: 77px;">Saturday, January 28, 2023</p>
+
+</div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.138</td>
+<td style="width: 152px;" class="text-center">DEZDAV</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+<div class="text-center"><p style="width: 77px;">Wednesday, January 25, 2023</p>
+
+</div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.138</td>
+<td style="width: 152px;" class="text-center">PREPANAV</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+<div class="text-center"><p style="width: 77px;">Wednesday, January 25, 2023</p>
+
+</div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.106</td>
+<td style="width: 152px;" class="text-center">PREPANAV</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+<div class="text-center"><p style="width: 77px;">Wednesday, January 25, 2023</p>
+
+</div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.106</td>
+<td style="width: 152px;" class="text-center">PREPANAV</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+<div class="text-center"><p style="width: 77px;">Wednesday, January 25, 2023</p>
+
+</div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.106</td>
+<td style="width: 152px;" class="text-center">FICPAT</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+<div class="text-center"><p style="width: 77px;">Saturday, January 14, 2023</p>
+
+</div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.106</td>
+<td style="width: 152px;" class="text-center">FICPAT</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+<div class="text-center"><p style="width: 77px;">Saturday, January 21, 2023</p>
+
+</div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.86</td>
+<td style="width: 152px;" class="text-center">FICPAT</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+  <div class="text-center"><p style="width: 77px;">Saturday, January 28, 2023</p>
+
+  </div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.86</td>
+<td style="width: 152px;" class="text-center">FICPAT</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+<div class="text-center"><p style="width: 77px;">Saturday, January 28, 2023</p>
+
+</div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.86</td>
+<td style="width: 152px;" class="text-center">GATE1DU</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+<div class="text-center"><p style="width: 77px;">Saturday, January 28, 2023</p>
+
+</div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.86</td>
+<td style="width: 152px;" class="text-center">GATE1DU</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+  <td >
+    <div class="text-center"><p style="width: 77px;">Saturday, January 28, 2023</p>
+
+    </div>
+  </td>
+  <td style="width: 69px;" class="text-center">tllu1265983</td>
+  <td style="width: 53px;" class="text-center">192.168.14.138</td>
+  <td style="width: 152px;" class="text-center">DEZDAV</td>
+  <td style="width: 34px;" class="text-center">200</td>
+
+  <td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+  <div class="text-center"><p style="width: 77px;">Saturday, January 28, 2023</p>
+
+  </div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.138</td>
+<td style="width: 152px;" class="text-center">DEZDAV</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+<div class="text-center"><p style="width: 77px;">Saturday, January 28, 2023</p>
+
+</div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.138</td>
+<td style="width: 152px;" class="text-center">DEZDAV</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+<div class="text-center"><p style="width: 77px;">Wednesday, January 25, 2023</p>
+
+</div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.138</td>
+<td style="width: 152px;" class="text-center">PREPANAV</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+<div class="text-center"><p style="width: 77px;">Wednesday, January 25, 2023</p>
+
+</div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.106</td>
+<td style="width: 152px;" class="text-center">PREPANAV</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+<div class="text-center"><p style="width: 77px;">Wednesday, January 25, 2023</p>
+
+</div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.106</td>
+<td style="width: 152px;" class="text-center">PREPANAV</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+<div class="text-center"><p style="width: 77px;">Wednesday, January 25, 2023</p>
+
+</div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.106</td>
+<td style="width: 152px;" class="text-center">FICPAT</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+<div class="text-center"><p style="width: 77px;">Saturday, January 14, 2023</p>
+
+</div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.106</td>
+<td style="width: 152px;" class="text-center">FICPAT</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+<div class="text-center"><p style="width: 77px;">Saturday, January 21, 2023</p>
+
+</div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.86</td>
+<td style="width: 152px;" class="text-center">FICPAT</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+  <div class="text-center"><p style="width: 77px;">Saturday, January 28, 2023</p>
+
+  </div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.86</td>
+<td style="width: 152px;" class="text-center">FICPAT</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+<div class="text-center"><p style="width: 77px;">Saturday, January 28, 2023</p>
+
+</div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.86</td>
+<td style="width: 152px;" class="text-center">GATE1DU</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+<div class="text-center"><p style="width: 77px;">Saturday, January 28, 2023</p>
+
+</div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.86</td>
+<td style="width: 152px;" class="text-center">GATE1DU</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+  <td >
+    <div class="text-center"><p style="width: 77px;">Saturday, January 28, 2023</p>
+
+    </div>
+  </td>
+  <td style="width: 69px;" class="text-center">tllu1265983</td>
+  <td style="width: 53px;" class="text-center">192.168.14.138</td>
+  <td style="width: 152px;" class="text-center">DEZDAV</td>
+  <td style="width: 34px;" class="text-center">200</td>
+
+  <td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+  <div class="text-center"><p style="width: 77px;">Saturday, January 28, 2023</p>
+
+  </div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.138</td>
+<td style="width: 152px;" class="text-center">DEZDAV</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+<div class="text-center"><p style="width: 77px;">Saturday, January 28, 2023</p>
+
+</div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.138</td>
+<td style="width: 152px;" class="text-center">DEZDAV</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+<div class="text-center"><p style="width: 77px;">Wednesday, January 25, 2023</p>
+
+</div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.138</td>
+<td style="width: 152px;" class="text-center">PREPANAV</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+<div class="text-center"><p style="width: 77px;">Wednesday, January 25, 2023</p>
+
+</div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.106</td>
+<td style="width: 152px;" class="text-center">PREPANAV</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+<div class="text-center"><p style="width: 77px;">Wednesday, January 25, 2023</p>
+
+</div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.106</td>
+<td style="width: 152px;" class="text-center">PREPANAV</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+<div class="text-center"><p style="width: 77px;">Wednesday, January 25, 2023</p>
+
+</div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.106</td>
+<td style="width: 152px;" class="text-center">FICPAT</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+<div class="text-center"><p style="width: 77px;">Saturday, January 14, 2023</p>
+
+</div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.106</td>
+<td style="width: 152px;" class="text-center">FICPAT</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+<div class="text-center"><p style="width: 77px;">Saturday, January 21, 2023</p>
+
+</div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.86</td>
+<td style="width: 152px;" class="text-center">FICPAT</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+  <div class="text-center"><p style="width: 77px;">Saturday, January 28, 2023</p>
+
+  </div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.86</td>
+<td style="width: 152px;" class="text-center">FICPAT</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+<div class="text-center"><p style="width: 77px;">Saturday, January 28, 2023</p>
+
+</div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.86</td>
+<td style="width: 152px;" class="text-center">GATE1DU</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+<div class="text-center"><p style="width: 77px;">Saturday, January 28, 2023</p>
+
+</div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.86</td>
+<td style="width: 152px;" class="text-center">GATE1DU</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+  <td >
+    <div class="text-center"><p style="width: 77px;">Saturday, January 28, 2023</p>
+
+    </div>
+  </td>
+  <td style="width: 69px;" class="text-center">tllu1265983</td>
+  <td style="width: 53px;" class="text-center">192.168.14.138</td>
+  <td style="width: 152px;" class="text-center">DEZDAV</td>
+  <td style="width: 34px;" class="text-center">200</td>
+
+  <td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+  <div class="text-center"><p style="width: 77px;">Saturday, January 28, 2023</p>
+
+  </div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.138</td>
+<td style="width: 152px;" class="text-center">DEZDAV</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+<div class="text-center"><p style="width: 77px;">Saturday, January 28, 2023</p>
+
+</div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.138</td>
+<td style="width: 152px;" class="text-center">DEZDAV</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+<div class="text-center"><p style="width: 77px;">Wednesday, January 25, 2023</p>
+
+</div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.138</td>
+<td style="width: 152px;" class="text-center">PREPANAV</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+<div class="text-center"><p style="width: 77px;">Wednesday, January 25, 2023</p>
+
+</div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.106</td>
+<td style="width: 152px;" class="text-center">PREPANAV</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+<div class="text-center"><p style="width: 77px;">Wednesday, January 25, 2023</p>
+
+</div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.106</td>
+<td style="width: 152px;" class="text-center">PREPANAV</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+<div class="text-center"><p style="width: 77px;">Wednesday, January 25, 2023</p>
+
+</div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.106</td>
+<td style="width: 152px;" class="text-center">FICPAT</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+<div class="text-center"><p style="width: 77px;">Saturday, January 14, 2023</p>
+
+</div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.106</td>
+<td style="width: 152px;" class="text-center">FICPAT</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+<div class="text-center"><p style="width: 77px;">Saturday, January 21, 2023</p>
+
+</div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.86</td>
+<td style="width: 152px;" class="text-center">FICPAT</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+  <div class="text-center"><p style="width: 77px;">Saturday, January 28, 2023</p>
+
+  </div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.86</td>
+<td style="width: 152px;" class="text-center">FICPAT</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+<div class="text-center"><p style="width: 77px;">Saturday, January 28, 2023</p>
+
+</div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.86</td>
+<td style="width: 152px;" class="text-center">GATE1DU</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
+<tr >
+<td >
+<div class="text-center"><p style="width: 77px;">Saturday, January 28, 2023</p>
+
+</div>
+</td>
+<td style="width: 69px;" class="text-center">tllu1265983</td>
+<td style="width: 53px;" class="text-center">192.168.14.86</td>
+<td style="width: 152px;" class="text-center">GATE1DU</td>
+<td style="width: 34px;" class="text-center">200</td>
+
+<td style="width: 56px;" class="text-center">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36</td>
+</tr>
               </tbody>
           </table>
           </div>
@@ -259,32 +1190,8 @@
     </div>
 
   </div>
-  <div class="mt-5 ms-3 footer">
-    <app-footer></app-footer>
-  </div>
 </div>
-<div class="col-lg-3 mt-5">
-  <div class="sidebar">
-    <div class="mt-4"><p class="ptitle ms-2 mt-3">{{'Convert'|translate}} :</p></div>
-    <div class="d-flex ms-4">
-      <img src="../../assets/image/comp.svg" alt="">
-      <span class="ms-2 chartnumber">15000</span>
-    </div>
-    <img class="ms-3 mt-2 mb-2" src="../../assets/image/chartside.png" alt="">
-    <div class="d-flex ms-3 text-center">
-      <div class="ms-2 datachart">
-        <img src="../../assets/image/green.svg" alt=""> <span class="">{{'Normal'|translate}}</span>
-      </div>
-      <div class="ms-2 datachart">
-        <img src="../../assets/image/red.svg" alt=""> <span class="">{{'Unnormal'|translate}}</span>
-      </div>
-  </div>
 
-</div>
-<div class="col-lg-3 ms-3">
-  <app-chat></app-chat>
-</div>
-</div>
 
 
 <!-- <a href="shorturl.at/sDGW0">link</a> -->

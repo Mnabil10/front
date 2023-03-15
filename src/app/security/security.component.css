@@ -235,3 +235,7 @@ input[type=date]{
 li.selected {
   background: #B01B1F !important;
 }
+
+.result{
+  width: 500px;
+}
