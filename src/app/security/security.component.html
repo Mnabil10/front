@@ -171,45 +171,133 @@
                 <form action="#" [formGroup]="addForm" (ngSubmit)="submit()" class="">
 
                       <div class="col-md-12 mt-4">
-                         <input class="form-control" type="text" formControlName="trip-start" placeholder="mm/dd/yyyy" required>
+                        <label >Start Trip</label>
+
+                         <input class="form-control mt-2" type="date" formControlName="trip-start" placeholder="Start Trip" required>
 
                       </div>
 
                       <div class="col-md-12 mt-4">
-                          <input class="form-control" type="text" formControlName="trip-end" placeholder="mm/dd/yyyy" required>
+                        <label >End Trip</label>
+
+                          <input class="form-control mt-2" type="date" formControlName="trip-end" placeholder="End Trip" required>
 
                       </div>
 
-                     <div class="col-md-12 mt-4">
-                          <select class="form-select mt-3" formControlName="modelType" required >
-                                <option selected disabled value="">Choose the model</option>
-                                <option value="Gradient Boosting" >Gradient Boosting</option>
-                                <option value="Decision Tree"> Decision Tree</option>
-                                <option value="Random Forests"> Random Forests</option>
-                         </select>
 
-                     </div>
+
 
 
                      <div class="col-md-12 mt-4">
                         <input class="form-control" type="text" formControlName="ContainerID" placeholder="ContainerID" required>
                      </div>
                       <div class="form-button mt-3 ">
-                          <button  type="submit" class="btn btn-danger">Submit</button>
+                          <button  type="submit" class="btn btn-danger">Predict</button>
                       </div>
                   </form>
-                  <div class="col-lg-12 mt-5   result">
+                  <div style="" class="mt-4">
+                    <table  class="table text-center">
+                      <thead>
+                          <tr>
+                              <th scope="col" style="width: 50px;">Container_ID</th>
+                              <th scope="col" style="width: 50px;">prediction</th>
+                              <th scope="col" style="width: 50px;">Trip start</th>
+                                  <th scope="col" style="width: 50px;">Trip end</th>
+                                  <th scope="col" style="width: 77px;">Most frequent user</th>
+                                  <th scope="col" style="width: 77px;">Most freq move</th>
+                                  <th scope="col" style="width: 60px;">No of users</th>
+                                  <th scope="col" style="width: 90px;">No of HTTP hits</th>
+
+
+                          </tr>
+                      </thead>
+                      <tbody>
+
+                              <tr >
+                              <td style="width: 50px;" class="text-center">{{data.Container_ID}}</td>
+                              <td style="width: 50px;" class="text-center">{{data.prediction}}</td>
+                              <td style="width: 77px;" class="text-center">{{data.Details.trip_start}}</td>
+                                  <td style="width: 77px;" class="text-center">{{data.Details.trip_end}}</td>
+                              <!-- <td style="width: 100px;" class="text-center">{{data.Details.sim_moveset_occ}}</td>
+                              <td style="width: 100px;" class="text-center">{{data.Details.sim_move_perc}}</td> -->
+                              <td style="width: 50px;" class="text-center">{{data.Details.freq_user}}</td>
+                              <td style="width: 77px;" class="text-center">{{data.Details.freq_move}}</td>
+                              <td style="width: 60px;" class="text-center">{{data.Details.no_users}}</td>
+                              <td style="width: 90px;" class="text-center">{{data.Details.no_http_hits}}</td>
+
+                          </tr>
+                        </tbody>
+                      </table>
+                      </div>
+
+                          <div style="" class="mt-4">
+                            <table  class="table text-center">
+                              <thead>
+                                  <tr>
+                                    <th scope="col" style="width: 100px;">Attribute</th>
+                                    <th scope="col" style="width: 300px;">Value</th>
+
+
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                <tr >
+                                  <td style="width: 100px;" class="text-center">Container move set</td>
+                                <td style="width: 300px;" class="text-center">{{data.Details.users_set}}</td>
+                                </tr>
+                                  <tr >
+                                    <td style="width: 100px;" class="text-center">Users set</td>
+                                  <td style="width: 300px;" class="text-center">{{data.Details.sim_moveset}}</td>
+                                  </tr>
+                                  <tr>
+                                  <td style="width: 100px;" class="text-center">Most similar move set</td>
+                                  <td style="width: 300px;" class="text-center">{{data.Details.sim_moveset}}</td>
+
+
+
+                                  </tr>
+                                  <tr>
+                                    <td style="width: 100px;" class="text-center">Container move set occurance</td>
+                                    <td style="width: 300px;" class="text-center">{{data.Details.cont_moveset_occ}}</td>
+
+
+
+                                    </tr>
+                                    <tr>
+                                      <td style="width: 100px;" class="text-center">Similar move occurence</td>
+                                      <td style="width: 300px;" class="text-center">{{data.Details.sim_moveset_occ}}</td>
+
+
+
+                                      </tr>
+                                    <tr>
+                                      <td style="width: 100px;" class="text-center">Similar move occurence %</td>
+                                      <td style="width: 300px;" class="text-center">{{data.Details.sim_move_perc}}</td>
+
+
+
+                                      </tr><tr>
+                                        <td style="width: 100px;" class="text-center">IPs</td>
+                                        <td style="width: 300px;" class="text-center">{{data.Details.ips}}</td>
+
+
+
+                                        </tr>
+                                </tbody>
+                              </table>
+                              </div>
+                  <!-- <div class="col-lg-12 mt-5   result">
                     <h3> ContainerID : {{data.Container_ID}}</h3>
-                    <h3>Your Prediction : {{data.prediction}}</h3>
-                    <h3>Model Used for prediction is : {{data.Model}}</h3>
-                    <h3>Details :
+                    <h3>Your Prediction : {{data.prediction}}</h3> -->
+                    <!-- <h3>Model Used for prediction is : {{data.Model}}</h3> -->
+                    <!-- <h3>Details :
                       <p> deba_date : {{data.Details.deba_date}}</p>
                       <p> emba_date : {{data.Details.emba_date}}</p>
                       <p> freq_move : {{data.Details.freq_move}}</p>
                       <p> freq_user : {{data.Details.freq_user}}</p>
                       <p> http_hits : {{data.Details.http_hits}}</p>
                       <p> move_set : {{data.Details.move_set}}</p>
-                      <p> no_users : {{data.Details.no_users}}</p>
+                      <p> no_users : {{data.Details.no_users}}</p> -->
                        <!-- "cont": "EISU8549574",
                       "deba_date": "20221005",
                       "emba_date": "20221028",
@@ -218,9 +306,9 @@
                       "http_hits": "0",
                       "move_set": "['DEBA', 'ALOD', 'CHAL', 'BASI', 'ABSI', 'BASI', 'CHAL', 'SPCA', 'EVCA', 'APRO', 'CHES', 'EMBA']",
                       "no_users": "9" -->
-                    </h3>
+                    <!-- </h3> -->
 
-                  </div>
+                  <!-- </div> -->
               </div>
 
           </div>

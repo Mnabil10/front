@@ -49,7 +49,7 @@ export class SecurityComponent implements OnInit {
     "ContainerID": new FormControl('', [Validators.required]),
     "trip-start": new FormControl('', [Validators.required]),
     "trip-end": new FormControl('', [Validators.required]),
-    "modelType": new FormControl('', [Validators.required]),
+
   });
   submit(){
 

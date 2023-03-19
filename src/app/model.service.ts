@@ -16,7 +16,6 @@ export class ModelService {
     console.log(formInput.value)
     const data = new FormData()
     data.append("ContainerID", formInput.value.ContainerID)
-    data.append("modelType", formInput.value.modelType)
 
     data.append("trip-start", formInput.value["trip-start"])
     data.append("trip-end", formInput.value["trip-end"])

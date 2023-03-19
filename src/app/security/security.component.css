@@ -180,13 +180,13 @@ td{
   line-height: 22px;
   color: #626D7D;
 }
-input[type=date]{
+/* input[type=date]{
   width: 150px;
   height: 22px;
   background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
-}
+} */
 
 .active{
   color: #B01B1F;
@@ -236,6 +236,6 @@ li.selected {
   background: #B01B1F !important;
 }
 
-.result{
+/* .result{
   width: 500px;
-}
+} */
