@@ -54,13 +54,13 @@
       </a>
       </li>
       <li class="nav-item mb-4 ms-2 navSide-item">
-        <a routerLink="/company" routerLinkActive="active" class="nav-link">
-        <img class=" ms-3" src="../../assets/image/comp.svg" alt=""> <span class="ms-2">Shipping comp</span>
+        <a routerLink="/Movement" routerLinkActive="active" class="nav-link">
+        <img class=" ms-3" src="../../assets/image/comp.svg" alt=""> <span class="ms-2">Movement Analysis</span>
       </a>
       </li>
       <li class="nav-item mb-4 ms-4 navSide-item">
-        <a routerLink="/container" routerLinkActive="active" class="nav-link">
-        <img class="" src="../../assets/image/container.svg" alt=""><span class="">Container</span>
+        <a href="https://docs.google.com/spreadsheets/d/1-TOM68f5B0iIOm5GdwOAhGaKJzMIerXy0jN6F2ahUYE/export?format=xlsx"target="_blank" class="nav-link">
+        <img class="" src="../../assets/image/container.svg" alt=""><span class="">API RESULT</span>
       </a>
       </li>
     </ul>
@@ -73,1176 +73,174 @@
   <div class="col-lg-6"  >
     <div class="row">
       <div class="col-lg-6 mt-4">
-        <h3 class="dash mt-3 ms-3">shipping comp</h3>
+        <h3 class="dash mt-3 ms-3">Movement Analysis</h3>
         <p class="welcom ms-3">Welcome to Tangier port management platform.</p>
-        <div class="cardtable mt-2 col-lg-6 ms-3">
-          <div class="datetable d-flex ms-2 pt-2 mb-2">
-            <span class="tableP  me-1">shipping comp</span>
-            <span class="ms-3">From</span><input class="ms-2" type="date" name="date" placeholder="dd-mm-yyyy" >
-            <span class="ms-3">To</span><input class="ms-2" type="date" name="dates" placeholder="dd-mm-yyyy" >
-          </div>
+        <div class="cardtable mt-2 col-lg-12 ms-3">
           <div style="overflow-y:scroll; height: 450px;">
             <table  class="table text-center">
               <thead>
                   <tr>
-                      <th scope="col" style="width: 77px;">Date-Time</th>
-                      <th scope="col" style="width: 96px;">ship comp-id</th>
-                      <th scope="col" style="width: 88px;">cont-num</th>
-                      <th scope="col" style="width: 78px;">Cont-Type</th>
-                      <th scope="col" style="width: 57px;">country</th>
-                      <th scope="col" style="width: 109px;">Shipping comp</th>
-                      <th scope="col" style="width: 48px;">Status</th>
+                      <th scope="col" style="width: 200px;">Global_sets</th>
+                      <th scope="col" style="width: 96px;">Move_id</th>
+                      <th scope="col" style="width: 88px;">no_occurences</th>
+                      <th scope="col" style="width: 78px;">perc_occurance</th>
+
                   </tr>
               </thead>
               <tbody>
                   <tr >
-                      <td >
-                        <div class="text-center"><p style="width: 68px;">22-11-2022</p>
-                          <div class="text-center"><p class="timeTable text-center">02:00 PM</p></div>
-                        </div>
-                      </td>
-                      <td style="width: 69px;" class="text-center">1265983</td>
-                      <td style="width: 83px;" class="text-center">50</td>
-                      <td style="width: 45px;" class="text-center">Clothes</td>
-                      <td style="width: 34px;" class="text-center">China</td>
-                      <td style="width: 69px;" class="text-center">China comp</td>
-                      <td style="width: 56px;" class="text-center">Unnormal</td>
+
+                      <td style="width: 400px;" class="text-center">['DEBA', 'ALOD', 'CHAL', 'CTFR', 'SPDU', 'EVDU', 'APRO', 'CHES', 'EMBA']</td>
+                      <td style="width: 96px;" class="text-center">mv_5533</td>
+                      <td style="width: 88px;" class="text-center">5533</td>
+                      <td style="width: 78px;" class="text-center">25.5542213190467</td>
+
                   </tr>
                   <tr >
-                    <td >
-                      <div class="text-center"><p style="width: 68px;">22-11-2022</p>
-                        <p class="timeTable text-center">02:00 PM</p>
-                      </div>
-                    </td>
-                    <td style="width: 69px;" class="text-center">1265983</td>
-                    <td style="width: 83px;" class="text-center">10</td>
-                    <td style="width: 45px;" class="text-center">Clothes</td>
-                    <td style="width: 34px;" class="text-center">China</td>
-                    <td style="width: 69px;" class="text-center">China comp</td>
-                    <td style="width: 56px;" class="text-center">Unnormal</td>
+
+                    <td style="width: 400px;" class="text-center">['DEBA', 'RAZV', 'ALOD', 'CHAL', 'SVCA', 'EPCA', 'RVGM', 'BASE', 'INIT', 'APRO', 'EMBA']</td>
+                    <td style="width: 96px;" class="text-center">mv_5199</td>
+                    <td style="width: 88px;" class="text-center">5199</td>
+                    <td style="width: 78px;" class="text-center">24.0116386477</td>
+
                 </tr>
                 <tr >
-                  <td >
-                    <div class="text-center"><p style="width: 68px;">22-11-2022</p>
-                      <p class="timeTable text-center">02:00 PM</p>
-                    </div>
-                  </td>
-                  <td style="width: 69px;" class="text-center">1265983</td>
-                  <td style="width: 83px;" class="text-center">120</td>
-                  <td style="width: 45px;" class="text-center">Clothes</td>
-                  <td style="width: 34px;" class="text-center">China</td>
-                  <td style="width: 69px;" class="text-center">China comp</td>
-                  <td style="width: 56px;" class="text-center">Unnormal</td>
+
+                  <td style="width: 400px;" class="text-center">['DEBA', 'ALOD', 'BASI', 'SPDU', 'EVDU', 'SVCA', 'EPCA', 'RVGM', 'BASE', 'CHES', 'APRO', 'EMBA']</td>
+                  <td style="width: 96px;" class="text-center">mv_3292</td>
+                  <td style="width: 88px;" class="text-center">3292</td>
+                  <td style="width: 78px;" class="text-center">15.2041381858489</td>
+
               </tr>
               <tr >
-                <td >
-                  <div class="text-center"><p style="width: 68px;">22-11-2022</p>
-                    <p class="timeTable text-center">02:00 PM</p>
-                  </div>
-                </td>
-                <td style="width: 69px;" class="text-center">1265983</td>
-                <td style="width: 83px;" class="text-center">30</td>
-                <td style="width: 45px;" class="text-center">Clothes</td>
-                <td style="width: 34px;" class="text-center">China</td>
-                <td style="width: 69px;" class="text-center">China comp</td>
-                <td style="width: 56px;" class="text-center">Unnormal</td>
+
+                <td style="width: 400px;" class="text-center">['DEBA', 'BASI', 'ALOD', 'CHAL', 'CTFR', 'SPDU', 'EVDU', 'APRO', 'CHES', 'EMBA']</td>
+                <td style="width: 96px;" class="text-center">mv_3108</td>
+                <td style="width: 88px;" class="text-center">3108</td>
+                <td style="width: 78px;" class="text-center">14.3543321633105</td>
+
             </tr>
             <tr >
-              <td >
-                <div class="text-center"><p style="width: 68px;">22-11-2022</p>
-                  <p class="timeTable text-center">02:00 PM</p>
-                </div>
-              </td>
-              <td style="width: 69px;" class="text-center">1265983</td>
-              <td style="width: 83px;" class="text-center">40</td>
-              <td style="width: 45px;" class="text-center">Clothes</td>
-              <td style="width: 34px;" class="text-center">China</td>
-              <td style="width: 69px;" class="text-center">China comp</td>
-              <td style="width: 56px;" class="text-center">Unnormal</td>
+
+              <td style="width: 400px;" class="text-center">['DEBA', 'ALOD', 'BASI', 'SHFP', 'CHAL', 'SPCA', 'EPCA', 'RVGM', 'BASE', 'APRO', 'EMBA']</td>
+              <td style="width: 96px;" class="text-center">mv_1340</td>
+              <td style="width: 88px;" class="text-center">1340</td>
+              <td style="width: 78px;" class="text-center">6.18880472935526</td>
+
           </tr>
           <tr >
-            <td >
-              <div class="text-center"><p style="width: 68px;">22-11-2022</p>
-                <p class="timeTable text-center">02:00 PM</p>
-              </div>
-            </td>
-            <td style="width: 69px;" class="text-center">1265983</td>
-            <td style="width: 83px;" class="text-center">50</td>
-            <td style="width: 45px;" class="text-center">Clothes</td>
-            <td style="width: 34px;" class="text-center">China</td>
-            <td style="width: 69px;" class="text-center">China comp</td>
-            <td style="width: 56px;" class="text-center">Unnormal</td>
-        </tr>
-                <tr >
-                  <td >
-                    <div class="text-center"><p style="width: 68px;">22-11-2022</p>
-                      <p class="timeTable text-center">02:00 PM</p>
-                    </div>
-                  </td>
-                  <td style="width: 69px;" class="text-center">1265983</td>
-                  <td style="width: 83px;" class="text-center">60</td>
-                  <td style="width: 45px;" class="text-center">Clothes</td>
-                  <td style="width: 34px;" class="text-center">China</td>
-                  <td style="width: 69px;" class="text-center">China comp</td>
-                  <td style="width: 56px;" class="text-center">Unnormal</td>
-              </tr>
-              <tr >
-                <td >
-                  <div class="text-center"><p style="width: 68px;">22-11-2022</p>
-                    <p class="timeTable text-center">02:00 PM</p>
-                  </div>
-                </td>
-                <td style="width: 69px;" class="text-center">1265983</td>
-                <td style="width: 83px;" class="text-center">80</td>
-                <td style="width: 45px;" class="text-center">Clothes</td>
-                <td style="width: 34px;" class="text-center">China</td>
-                <td style="width: 69px;" class="text-center">China comp</td>
-                <td style="width: 56px;" class="text-center">Unnormal</td>
-            </tr>
-            <tr >
-              <td >
-                <div class="text-center"><p style="width: 68px;">22-11-2022</p>
-                  <div class="text-center"><p class="timeTable text-center">02:00 PM</p></div>
-                </div>
-              </td>
-              <td style="width: 69px;" class="text-center">1265983</td>
-              <td style="width: 83px;" class="text-center">50</td>
-              <td style="width: 45px;" class="text-center">Clothes</td>
-              <td style="width: 34px;" class="text-center">China</td>
-              <td style="width: 69px;" class="text-center">China comp</td>
-              <td style="width: 56px;" class="text-center">Unnormal</td>
-          </tr>
-          <tr >
-            <td >
-              <div class="text-center"><p style="width: 68px;">22-11-2022</p>
-                <p class="timeTable text-center">02:00 PM</p>
-              </div>
-            </td>
-            <td style="width: 69px;" class="text-center">1265983</td>
-            <td style="width: 83px;" class="text-center">10</td>
-            <td style="width: 45px;" class="text-center">Clothes</td>
-            <td style="width: 34px;" class="text-center">China</td>
-            <td style="width: 69px;" class="text-center">China comp</td>
-            <td style="width: 56px;" class="text-center">Unnormal</td>
+
+            <td style="width: 400px;" class="text-center">['DEBA', 'BASI', 'ALOD', 'SHFP', 'SPDU', 'EVDU', 'APRO', 'CHES', 'EMBA']</td>
+            <td style="width: 96px;" class="text-center">mv_1105</td>
+            <td style="width: 88px;" class="text-center">1105</td>
+            <td style="width: 78px;" class="text-center">5.10345464622206</td>
+
         </tr>
         <tr >
-          <td >
-            <div class="text-center"><p style="width: 68px;">22-11-2022</p>
-              <p class="timeTable text-center">02:00 PM</p>
-            </div>
-          </td>
-          <td style="width: 69px;" class="text-center">1265983</td>
-          <td style="width: 83px;" class="text-center">120</td>
-          <td style="width: 45px;" class="text-center">Clothes</td>
-          <td style="width: 34px;" class="text-center">China</td>
-          <td style="width: 69px;" class="text-center">China comp</td>
-          <td style="width: 56px;" class="text-center">Unnormal</td>
+
+          <td style="width: 400px;" class="text-center">['DEBA', 'BASI', 'ALOD', 'SHFP', 'SPDU', 'EVDU', 'APRO', 'CHES', 'EMBA']</td>
+          <td style="width: 96px;" class="text-center">mv_452</td>
+          <td style="width: 88px;" class="text-center">452</td>
+          <td style="width: 78px;" class="text-center">2.08756696840938</td>
+
       </tr>
       <tr >
-        <td >
-          <div class="text-center"><p style="width: 68px;">22-11-2022</p>
-            <p class="timeTable text-center">02:00 PM</p>
-          </div>
-        </td>
-        <td style="width: 69px;" class="text-center">1265983</td>
-        <td style="width: 83px;" class="text-center">30</td>
-        <td style="width: 45px;" class="text-center">Clothes</td>
-        <td style="width: 34px;" class="text-center">China</td>
-        <td style="width: 69px;" class="text-center">China comp</td>
-        <td style="width: 56px;" class="text-center">Unnormal</td>
+
+        <td style="width: 400px;" class="text-center">['DEBA', 'BASI', 'ALOD', 'SPDU', 'CHAL', 'EVDU', 'APRO', 'CHES', 'EMBA']</td>
+        <td style="width: 96px;" class="text-center">mv_270</td>
+        <td style="width: 88px;" class="text-center">270</td>
+        <td style="width: 78px;" class="text-center">1.24699796785516</td>
+
     </tr>
     <tr >
-      <td >
-        <div class="text-center"><p style="width: 68px;">22-11-2022</p>
-          <p class="timeTable text-center">02:00 PM</p>
-        </div>
-      </td>
-      <td style="width: 69px;" class="text-center">1265983</td>
-      <td style="width: 83px;" class="text-center">40</td>
-      <td style="width: 45px;" class="text-center">Clothes</td>
-      <td style="width: 34px;" class="text-center">China</td>
-      <td style="width: 69px;" class="text-center">China comp</td>
-      <td style="width: 56px;" class="text-center">Unnormal</td>
+
+      <td style="width: 400px;" class="text-center">['DEBA', 'CHET', 'BASE', 'ALOD', 'INIT', 'CTFR', 'APRO', 'EMBA']</td>
+      <td style="width: 96px;" class="text-center">mv_175</td>
+      <td style="width: 88px;" class="text-center">175</td>
+      <td style="width: 78px;" class="text-center">0.808239423609828</td>
+
   </tr>
   <tr >
-    <td >
-      <div class="text-center"><p style="width: 68px;">22-11-2022</p>
-        <p class="timeTable text-center">02:00 PM</p>
-      </div>
-    </td>
-    <td style="width: 69px;" class="text-center">1265983</td>
-    <td style="width: 83px;" class="text-center">50</td>
-    <td style="width: 45px;" class="text-center">Clothes</td>
-    <td style="width: 34px;" class="text-center">China</td>
-    <td style="width: 69px;" class="text-center">China comp</td>
-    <td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-        <tr >
-          <td >
-            <div class="text-center"><p style="width: 68px;">22-11-2022</p>
-              <p class="timeTable text-center">02:00 PM</p>
-            </div>
-          </td>
-          <td style="width: 69px;" class="text-center">1265983</td>
-          <td style="width: 83px;" class="text-center">60</td>
-          <td style="width: 45px;" class="text-center">Clothes</td>
-          <td style="width: 34px;" class="text-center">China</td>
-          <td style="width: 69px;" class="text-center">China comp</td>
-          <td style="width: 56px;" class="text-center">Unnormal</td>
-      </tr>
-      <tr >
-        <td >
-          <div class="text-center"><p style="width: 68px;">22-11-2022</p>
-            <p class="timeTable text-center">02:00 PM</p>
-          </div>
-        </td>
-        <td style="width: 69px;" class="text-center">1265983</td>
-        <td style="width: 83px;" class="text-center">80</td>
-        <td style="width: 45px;" class="text-center">Clothes</td>
-        <td style="width: 34px;" class="text-center">China</td>
-        <td style="width: 69px;" class="text-center">China comp</td>
-        <td style="width: 56px;" class="text-center">Unnormal</td>
-    </tr>
-    <tr >
-      <td >
-        <div class="text-center"><p style="width: 68px;">22-11-2022</p>
-          <div class="text-center"><p class="timeTable text-center">02:00 PM</p></div>
-        </div>
-      </td>
-      <td style="width: 69px;" class="text-center">1265983</td>
-      <td style="width: 83px;" class="text-center">50</td>
-      <td style="width: 45px;" class="text-center">Clothes</td>
-      <td style="width: 34px;" class="text-center">China</td>
-      <td style="width: 69px;" class="text-center">China comp</td>
-      <td style="width: 56px;" class="text-center">Unnormal</td>
-  </tr>
-  <tr >
-    <td >
-      <div class="text-center"><p style="width: 68px;">22-11-2022</p>
-        <p class="timeTable text-center">02:00 PM</p>
-      </div>
-    </td>
-    <td style="width: 69px;" class="text-center">1265983</td>
-    <td style="width: 83px;" class="text-center">10</td>
-    <td style="width: 45px;" class="text-center">Clothes</td>
-    <td style="width: 34px;" class="text-center">China</td>
-    <td style="width: 69px;" class="text-center">China comp</td>
-    <td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-  <td >
-    <div class="text-center"><p style="width: 68px;">22-11-2022</p>
-      <p class="timeTable text-center">02:00 PM</p>
-    </div>
-  </td>
-  <td style="width: 69px;" class="text-center">1265983</td>
-  <td style="width: 83px;" class="text-center">120</td>
-  <td style="width: 45px;" class="text-center">Clothes</td>
-  <td style="width: 34px;" class="text-center">China</td>
-  <td style="width: 69px;" class="text-center">China comp</td>
-  <td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-  <div class="text-center"><p style="width: 68px;">22-11-2022</p>
-    <p class="timeTable text-center">02:00 PM</p>
-  </div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">30</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-  <p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">40</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-<p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">50</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-  <td >
-    <div class="text-center"><p style="width: 68px;">22-11-2022</p>
-      <p class="timeTable text-center">02:00 PM</p>
-    </div>
-  </td>
-  <td style="width: 69px;" class="text-center">1265983</td>
-  <td style="width: 83px;" class="text-center">60</td>
-  <td style="width: 45px;" class="text-center">Clothes</td>
-  <td style="width: 34px;" class="text-center">China</td>
-  <td style="width: 69px;" class="text-center">China comp</td>
-  <td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-  <div class="text-center"><p style="width: 68px;">22-11-2022</p>
-    <p class="timeTable text-center">02:00 PM</p>
-  </div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">80</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-  <td >
-    <div class="text-center"><p style="width: 68px;">22-11-2022</p>
-      <div class="text-center"><p class="timeTable text-center">02:00 PM</p></div>
-    </div>
-  </td>
-  <td style="width: 69px;" class="text-center">1265983</td>
-  <td style="width: 83px;" class="text-center">50</td>
-  <td style="width: 45px;" class="text-center">Clothes</td>
-  <td style="width: 34px;" class="text-center">China</td>
-  <td style="width: 69px;" class="text-center">China comp</td>
-  <td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-  <div class="text-center"><p style="width: 68px;">22-11-2022</p>
-    <p class="timeTable text-center">02:00 PM</p>
-  </div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">10</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-  <p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">120</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-<p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">30</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-<p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">40</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-<p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">50</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-  <p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">60</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-<p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">80</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-  <td >
-    <div class="text-center"><p style="width: 68px;">22-11-2022</p>
-      <div class="text-center"><p class="timeTable text-center">02:00 PM</p></div>
-    </div>
-  </td>
-  <td style="width: 69px;" class="text-center">1265983</td>
-  <td style="width: 83px;" class="text-center">50</td>
-  <td style="width: 45px;" class="text-center">Clothes</td>
-  <td style="width: 34px;" class="text-center">China</td>
-  <td style="width: 69px;" class="text-center">China comp</td>
-  <td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-  <div class="text-center"><p style="width: 68px;">22-11-2022</p>
-    <p class="timeTable text-center">02:00 PM</p>
-  </div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">10</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-  <p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">120</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-<p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">30</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-<p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">40</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-<p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">50</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-  <p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">60</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-<p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">80</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-  <td >
-    <div class="text-center"><p style="width: 68px;">22-11-2022</p>
-      <div class="text-center"><p class="timeTable text-center">02:00 PM</p></div>
-    </div>
-  </td>
-  <td style="width: 69px;" class="text-center">1265983</td>
-  <td style="width: 83px;" class="text-center">50</td>
-  <td style="width: 45px;" class="text-center">Clothes</td>
-  <td style="width: 34px;" class="text-center">China</td>
-  <td style="width: 69px;" class="text-center">China comp</td>
-  <td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-  <div class="text-center"><p style="width: 68px;">22-11-2022</p>
-    <p class="timeTable text-center">02:00 PM</p>
-  </div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">10</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-  <p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">120</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-<p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">30</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-<p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">40</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-<p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">50</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-  <p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">60</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-<p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">80</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-  <td >
-    <div class="text-center"><p style="width: 68px;">22-11-2022</p>
-      <div class="text-center"><p class="timeTable text-center">02:00 PM</p></div>
-    </div>
-  </td>
-  <td style="width: 69px;" class="text-center">1265983</td>
-  <td style="width: 83px;" class="text-center">50</td>
-  <td style="width: 45px;" class="text-center">Clothes</td>
-  <td style="width: 34px;" class="text-center">China</td>
-  <td style="width: 69px;" class="text-center">China comp</td>
-  <td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-  <div class="text-center"><p style="width: 68px;">22-11-2022</p>
-    <p class="timeTable text-center">02:00 PM</p>
-  </div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">10</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-  <p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">120</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-<p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">30</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-<p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">40</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-<p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">50</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-  <p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">60</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-<p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">80</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-  <td >
-    <div class="text-center"><p style="width: 68px;">22-11-2022</p>
-      <div class="text-center"><p class="timeTable text-center">02:00 PM</p></div>
-    </div>
-  </td>
-  <td style="width: 69px;" class="text-center">1265983</td>
-  <td style="width: 83px;" class="text-center">50</td>
-  <td style="width: 45px;" class="text-center">Clothes</td>
-  <td style="width: 34px;" class="text-center">China</td>
-  <td style="width: 69px;" class="text-center">China comp</td>
-  <td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-  <div class="text-center"><p style="width: 68px;">22-11-2022</p>
-    <p class="timeTable text-center">02:00 PM</p>
-  </div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">10</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-  <p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">120</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-<p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">30</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-<p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">40</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-<p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">50</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-  <p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">60</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-<p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">80</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-  <td >
-    <div class="text-center"><p style="width: 68px;">22-11-2022</p>
-      <div class="text-center"><p class="timeTable text-center">02:00 PM</p></div>
-    </div>
-  </td>
-  <td style="width: 69px;" class="text-center">1265983</td>
-  <td style="width: 83px;" class="text-center">50</td>
-  <td style="width: 45px;" class="text-center">Clothes</td>
-  <td style="width: 34px;" class="text-center">China</td>
-  <td style="width: 69px;" class="text-center">China comp</td>
-  <td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-  <div class="text-center"><p style="width: 68px;">22-11-2022</p>
-    <p class="timeTable text-center">02:00 PM</p>
-  </div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">10</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-  <p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">120</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-<p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">30</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-<p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">40</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-<p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">50</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-  <p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">60</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-<p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">80</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-  <td >
-    <div class="text-center"><p style="width: 68px;">22-11-2022</p>
-      <div class="text-center"><p class="timeTable text-center">02:00 PM</p></div>
-    </div>
-  </td>
-  <td style="width: 69px;" class="text-center">1265983</td>
-  <td style="width: 83px;" class="text-center">50</td>
-  <td style="width: 45px;" class="text-center">Clothes</td>
-  <td style="width: 34px;" class="text-center">China</td>
-  <td style="width: 69px;" class="text-center">China comp</td>
-  <td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-  <div class="text-center"><p style="width: 68px;">22-11-2022</p>
-    <p class="timeTable text-center">02:00 PM</p>
-  </div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">10</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-  <p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">120</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-<p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">30</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-<p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">40</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-<p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">50</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-  <p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">60</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-<p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">80</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-  <td >
-    <div class="text-center"><p style="width: 68px;">22-11-2022</p>
-      <div class="text-center"><p class="timeTable text-center">02:00 PM</p></div>
-    </div>
-  </td>
-  <td style="width: 69px;" class="text-center">1265983</td>
-  <td style="width: 83px;" class="text-center">50</td>
-  <td style="width: 45px;" class="text-center">Clothes</td>
-  <td style="width: 34px;" class="text-center">China</td>
-  <td style="width: 69px;" class="text-center">China comp</td>
-  <td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-  <div class="text-center"><p style="width: 68px;">22-11-2022</p>
-    <p class="timeTable text-center">02:00 PM</p>
-  </div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">10</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-  <p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">120</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-<p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">30</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-<p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">40</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-<p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">50</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-  <p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">60</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
-<tr >
-<td >
-<div class="text-center"><p style="width: 68px;">22-11-2022</p>
-<p class="timeTable text-center">02:00 PM</p>
-</div>
-</td>
-<td style="width: 69px;" class="text-center">1265983</td>
-<td style="width: 83px;" class="text-center">80</td>
-<td style="width: 45px;" class="text-center">Clothes</td>
-<td style="width: 34px;" class="text-center">China</td>
-<td style="width: 69px;" class="text-center">China comp</td>
-<td style="width: 56px;" class="text-center">Unnormal</td>
-</tr>
+
+    <td style="width: 400px;" class="text-center">['DEBA', 'ALOD', 'CTFR', 'SHFP', 'SPDU', 'EVDU', 'APRO', 'CHES', 'EMBA']</td>
+    <td style="width: 96px;" class="text-center">mv_160</td>
+    <td style="width: 88px;" class="text-center">160</td>
+    <td style="width: 78px;" class="text-center">0.738961758728986</td>
+
+</tr>
+<tr >
+
+  <td style="width: 400px;" class="text-center">['DEBA', 'ALOD', 'CTFR', 'SPDU', 'EVDU', 'APRO', 'CHES', 'EMBA']</td>
+  <td style="width: 96px;" class="text-center">mv_152</td>
+  <td style="width: 88px;" class="text-center">152</td>
+  <td style="width: 78px;" class="text-center">0.702013670792537</td>
+
+</tr>
+<tr >
+
+  <td style="width: 400px;" class="text-center">['DEBA', 'CHET', 'BASE', 'ALOD', 'CHAL', 'CTFR', 'INIT', 'APRO', 'EMBA']</td>
+  <td style="width: 96px;" class="text-center">mv_148</td>
+  <td style="width: 88px;" class="text-center">148</td>
+  <td style="width: 78px;" class="text-center">0.683539626824312</td>
+
+</tr>
+<tr >
+
+  <td style="width: 400px;" class="text-center">['DEBA', 'ALOD', 'BASI', 'SPDU', 'EVDU', 'APRO', 'CHES', 'EMBA']</td>
+  <td style="width: 96px;" class="text-center">mv_138</td>
+  <td style="width: 88px;" class="text-center">138</td>
+  <td style="width: 78px;" class="text-center">0.63735451690375</td>
+
+</tr>
+<tr >
+
+  <td style="width: 400px;" class="text-center">['DEBA', 'ALOD', 'SPDU', 'EVDU', 'APRO', 'CHES', 'EMBA']</td>
+  <td style="width: 96px;" class="text-center">mv_126</td>
+  <td style="width: 88px;" class="text-center">126</td>
+  <td style="width: 78px;" class="text-center">0.581932384999076</td>
+
+</tr>
+<tr >
+
+  <td style="width: 400px;" class="text-center">['DEBA', 'CHET', 'ALOD', 'BASE', 'CTFR', 'APRO', 'EMBA']</td>
+  <td style="width: 96px;" class="text-center">mv_122</td>
+  <td style="width: 88px;" class="text-center">122</td>
+  <td style="width: 78px;" class="text-center">0.563458341030852</td>
+
+</tr>
+<tr >
+
+  <td style="width: 400px;" class="text-center">['DEBA', 'ALOD', 'SPDU', 'CHAL', 'EVDU', 'APRO', 'CHES', 'EMBA']</td>
+  <td style="width: 96px;" class="text-center">mv_119</td>
+  <td style="width: 88px;" class="text-center">119</td>
+  <td style="width: 78px;" class="text-center">0.549602808054683</td>
+
+</tr>
+<tr >
+
+  <td style="width: 400px;" class="text-center">['DEBA', 'CHET', 'ALOD', 'CTFR', 'INIT', 'APRO', 'EMBA']</td>
+  <td style="width: 96px;" class="text-center">mv_111</td>
+  <td style="width: 88px;" class="text-center">111</td>
+  <td style="width: 78px;" class="text-center">0.512654720118234</td>
+
+</tr>
+<tr >
+
+  <td style="width: 400px;" class="text-center">['DEBA', 'ALOD', 'BASI', 'SHFP', 'CTFR', 'SPDU', 'EVDU', 'APRO', 'CHES', 'EMBA']</td>
+  <td style="width: 96px;" class="text-center">mv_102</td>
+  <td style="width: 88px;" class="text-center">102</td>
+  <td style="width: 78px;" class="text-center">0.471088121189728</td>
+
+</tr>
+
               </tbody>
           </table>
           </div>
         </div>
+        <div class="imgchart mt-4 ms-3 mb-4">
+          <img class="imgchart" src="../../assets/image/chaart.png" alt="">
+        </div>
+
 
     </div>
 

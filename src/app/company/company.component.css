@@ -32,13 +32,19 @@
 
 }
 .cardtable{
-  width: 800px;
+  width: 1000px;
   height: 491px;
   background: #FFFFFF;
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: 9px;
 }
-
+.imgchart{
+  width: 1000px;
+  height: 491px;
+  background: #FFFFFF;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 9px;
+}
 .navbar{
   width: 100%;
   height: 98px;
@@ -48,7 +54,7 @@
 }
 .navside{
   width: 294px;
-  height: 780px;
+  height: 1150px;
   background: #FFFFFF;
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: 0px;
@@ -71,7 +77,7 @@
   align-items: center;
   color: #FFFFFF;
   border: 1.5px solid #FFFFFF;
-  transform: translateY(500%);
+  transform: translateY(1200%);
 }
 .logoutButt{
   background: #B71F25;
