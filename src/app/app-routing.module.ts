@@ -16,7 +16,7 @@ const routes: Routes = [
   { path: 'check', component: SecurityComponent, canActivate: [AuthGuardService] },
   { path: 'http', component: VTTComponent, canActivate: [AuthGuardService]},
   { path: 'Movement', component: CompanyComponent, canActivate: [AuthGuardService] },
-  // { path: 'API', component: ContainerComponent, canActivate: [AuthGuardService] },
+  { path: 'Scrapp', component: ContainerComponent, canActivate: [AuthGuardService] },
   { path: '**', component: ErrorComponent },
   // { path: 'favourites', component: FavouritesViewComponent, canActivate: [AuthGuardService] },
 ];

@@ -6,7 +6,7 @@
   border-radius: 9px;
 }
 .dash{
-  width: 226px;
+  width: 800px;
   height: 24px;
   font-weight: 400;
   font-size: 25px;
@@ -14,12 +14,30 @@
   color: #B82026;
 }
 .welcom{
-  width: 452px;
+  width: 800px;
   height: 24px;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   color: #6E6B7B;
+}
+.scrap{
+  width: 800px;
+  height: 24px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #6E6B7B;
+}
+.scrap a{
+  text-decoration: none;
+  color: #B82026;
+}
+.scrap h4{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #B82026;
 }
 .pCard{
   width: 150.73px;
@@ -48,7 +66,7 @@
 }
 .navside{
   width: 294px;
-  height: 780px;
+  height: 2000px;
   background: #FFFFFF;
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: 0px;
@@ -71,7 +89,7 @@
   align-items: center;
   color: #FFFFFF;
   border: 1.5px solid #FFFFFF;
-  transform: translateY(500%);
+  transform: translateY(2600%);
 }
 .logoutButt{
   background: #B71F25;
