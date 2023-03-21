@@ -178,14 +178,14 @@
                       <div class="col-md-12 mt-4">
                         <label >Start Trip</label>
 
-                         <input class="form-control mt-2" type="date" formControlName="trip-start" placeholder="Start Trip" required>
+                         <input class="form-control mt-2 table" type="date" formControlName="trip-start" placeholder="Start Trip" required>
 
                       </div>
 
                       <div class="col-md-12 mt-4">
                         <label >End Trip</label>
 
-                          <input class="form-control mt-2" type="date" formControlName="trip-end" placeholder="End Trip" required>
+                          <input class="form-control mt-2 table" type="date" formControlName="trip-end" placeholder="End Trip" required>
 
                       </div>
 
@@ -194,7 +194,7 @@
 
 
                      <div class="col-md-12 mt-4">
-                        <input class="form-control" type="text" formControlName="ContainerID" placeholder="ContainerID" required>
+                        <input class="form-control table" type="text" formControlName="ContainerID" placeholder="ContainerID" required>
                      </div>
                       <div class="form-button mt-3 ">
                           <button  type="submit" class="btn btn-danger">Predict</button>
@@ -248,11 +248,11 @@
                               <tbody>
                                 <tr >
                                   <td style="width: 100px;" class="text-center">Container move set</td>
-                                <td style="width: 300px;" class="text-center">{{data.Details.users_set}}</td>
+                                <td style="width: 300px;" class="text-center">{{data.Details.cont_move_set}}</td>
                                 </tr>
                                   <tr >
                                     <td style="width: 100px;" class="text-center">Users set</td>
-                                  <td style="width: 300px;" class="text-center">{{data.Details.sim_moveset}}</td>
+                                  <td style="width: 300px;" class="text-center">{{data.Details.users_set}}</td>
                                   </tr>
                                   <tr>
                                   <td style="width: 100px;" class="text-center">Most similar move set</td>
@@ -282,12 +282,24 @@
 
 
                                       </tr><tr>
-                                        <td style="width: 100px;" class="text-center">IPs</td>
+                                        <td style="width: 100px;" class="text-center">Local IP</td>
                                         <td style="width: 300px;" class="text-center">{{data.Details.ips}}</td>
 
 
 
-                                        </tr>
+                                        </tr><tr>
+                                          <td style="width: 100px;" class="text-center">Destination Country</td>
+                                          <td style="width: 300px;" class="text-center">Under Design</td>
+
+
+
+                                          </tr><tr>
+                                            <td style="width: 100px;" class="text-center">Destination City</td>
+                                            <td style="width: 300px;" class="text-center">Under Design</td>
+
+
+
+                                            </tr>
                                 </tbody>
                               </table>
                               </div>
