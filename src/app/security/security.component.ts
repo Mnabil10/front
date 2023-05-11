@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { AuthService } from '../auth.service';
 import { NgxCsvParser, NgxCSVParserError } from 'ngx-csv-parser';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { ModelService } from '../model.service';
 import { TestBed } from '@angular/core/testing';
 import { DatePipe } from '@angular/common';
@@ -13,6 +13,7 @@ import { DatePipe } from '@angular/common';
   styleUrls: ['./security.component.css'],
 })
 export class SecurityComponent implements OnInit {
+  [x: string]: any;
   // videoItems = [
   //   {
   //     name: 'Before',
@@ -30,35 +31,49 @@ export class SecurityComponent implements OnInit {
   // currentVideo = this.videoItems[this.activeIndex];
   data: any;
   test:any;
+  date :any;
+  container : any;
+  startdate : any;
+  enddate :any;
 
-  constructor(public Translate: TranslateService,public auth:AuthService, private router:  Router,public model:ModelService ) {
+  constructor(public Translate: TranslateService,public auth:AuthService, private router:  Router,public model:ModelService,private formBuilder: FormBuilder ) {
     Translate.addLangs(['en','fr']);
     Translate.setDefaultLang('en');
    }
+
    switchLanguage(lang:string){
     this.Translate.use(lang);
    }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.addForm = this.formBuilder.group({
+      container: [''],
+      startdate: [''],
+      enddate: ['']
+
+    });
+  }
+  getFormattedDate() {
+    return this['datePipe'].transform(this.date, 'dd-MM-YYYY');
   }
   signOut() {
     this.auth.LogOut()
     this.router.navigate(['/login']);
   }
   addForm = new FormGroup({
-    "ContainerID": new FormControl('', [Validators.required]),
-    "trip-start": new FormControl('', [Validators.required]),
-    "trip-end": new FormControl('', [Validators.required]),
+    "container": new FormControl('', [Validators.required]),
+    "startdate": new FormControl('', [Validators.required]),
+    "enddate": new FormControl('', [Validators.required]),
 
   });
-  submit(){
+  // submit(){
 
-    this.model.submit(this.addForm).subscribe(data =>{
-      console.log("Submit function")
-      this.data= data;
-      console.log(this.data.Model);
-    })
-  }
+  //   this.model.submit(this.addForm).subscribe(data =>{
+  //     console.log("Submit function")
+  //     this.data= data;
+  //     console.log(this.data.Model);
+  //   })
+  // }
 //   submit() {
 //     this.test = this.addForm.value;
 //     this.model.submit(this.test).subscribe((response: any) => {

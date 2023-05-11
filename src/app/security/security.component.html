@@ -173,19 +173,19 @@
           <div class="form-content ">
               <div class="form-items">
                 <h1>Check Container</h1>
-                <form action="#" [formGroup]="addForm" (ngSubmit)="submit()" class="">
+                <form action="#" [formGroup]="addForm"  class="">
 
                       <div class="col-md-12 mt-4">
                         <label >Start Trip</label>
 
-                         <input class="form-control mt-2 table" type="date" formControlName="trip-start" placeholder="Start Trip" required>
+                         <input class="form-control mt-2 table" type="text" formControlName="startdate" placeholder="Start Trip" [(ngModel)]="startdate" required>
 
                       </div>
 
                       <div class="col-md-12 mt-4">
                         <label >End Trip</label>
 
-                          <input class="form-control mt-2 table" type="date" formControlName="trip-end" placeholder="End Trip" required>
+                          <input class="form-control mt-2 table" type="text" formControlName="enddate" placeholder="End Trip" [(ngModel)]="enddate" required>
 
                       </div>
 
@@ -194,13 +194,13 @@
 
 
                      <div class="col-md-12 mt-4">
-                        <input class="form-control table" type="text" formControlName="ContainerID" placeholder="ContainerID" required>
+                        <input class="form-control table" type="text" formControlName="container" placeholder="ContainerID" [(ngModel)]="container" required>
                      </div>
                       <div class="form-button mt-3 ">
-                          <button  type="submit" class="btn btn-danger">Predict</button>
+                          <button class="btn btn-danger"><a href="http://10.10.99.13:3000/api/v1/report/{{container}}?startDate={{startdate}}&endDate={{enddate}}" target="_blank" style=" color: white;  text-decoration: none">predict</a></button>
                       </div>
                   </form>
-                  <div style="" class="mt-4">
+                  <!-- <div style="" class="mt-4">
                     <table  class="table text-center">
                       <thead>
                           <tr>
@@ -223,8 +223,8 @@
                               <td style="width: 50px;" class="text-center">{{data.prediction}}</td>
                               <td style="width: 77px;" class="text-center">{{data.Details.trip_start}}</td>
                                   <td style="width: 77px;" class="text-center">{{data.Details.trip_end}}</td>
-                              <!-- <td style="width: 100px;" class="text-center">{{data.Details.sim_moveset_occ}}</td>
-                              <td style="width: 100px;" class="text-center">{{data.Details.sim_move_perc}}</td> -->
+                              <td style="width: 100px;" class="text-center">{{data.Details.sim_moveset_occ}}</td>
+                              <td style="width: 100px;" class="text-center">{{data.Details.sim_move_perc}}</td>
                               <td style="width: 50px;" class="text-center">{{data.Details.freq_user}}</td>
                               <td style="width: 77px;" class="text-center">{{data.Details.freq_move}}</td>
                               <td style="width: 60px;" class="text-center">{{data.Details.no_users}}</td>
@@ -233,9 +233,9 @@
                           </tr>
                         </tbody>
                       </table>
-                      </div>
+                      </div> -->
 
-                          <div style="" class="mt-4">
+                          <!-- <div style="" class="mt-4">
                             <table  class="table text-center">
                               <thead>
                                   <tr>
@@ -302,7 +302,7 @@
                                             </tr>
                                 </tbody>
                               </table>
-                              </div>
+                              </div> -->
                   <!-- <div class="col-lg-12 mt-5   result">
                     <h3> ContainerID : {{data.Container_ID}}</h3>
                     <h3>Your Prediction : {{data.prediction}}</h3> -->
