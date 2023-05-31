@@ -1,41 +1,5 @@
 
-<nav class="navbar navbar-expand-lg bg-light col-lg-12 col-md-12 col-sm-12">
-  <div class="container-fluid">
-    <span class="me-4"><img src="../../assets/image/vector.svg" alt=""></span>
-    <a class="navbar-brand me-4" href="#"><img src="../../assets/image/Docksera navbar.png" alt=""></a>
-    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button> -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <form class="me-4" role="search">
-        <input class="form-control me-2 searchbar" type="search" placeholder="Search" aria-label="Search">
-      </form>
-    </div>
-    <div class="d-flex align-items-center">
-      <span class="me-4"><img src="../../assets/image/message.svg" alt=""></span>
-      <span class="me-4"><img src="../../assets/image/ring.svg" alt=""></span>
-      <div class="lang me-4">
-        <select class="form-control" #selctedLang (change)="switchLanguage(selctedLang.value)">
-          <option *ngFor="let language of Translate.getLangs()"
-          [value]="language"
-          [selected]="language === Translate.currentLang">
-            {{language}}</option>
-        </select>
-      </div>
-      <div class="loginAcc d-flex">
-        <div>
-          <img src="../../assets/image/testimg.png" alt="" class="ms-3 mt-1">
-        </div>
-
-          <div class="align-items-center ms-3">
-            <span class="name">Finn warhol</span><br>
-            <span class="email">andywarhol@mail.com</span>
-          </div>
-      </div>
-    </div>
-  </div>
-</nav>
-<div class="row col-lg-12">
+<!-- <div class="row col-lg-12">
   <div class="col-lg-3 navside">
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       <li class="nav-item mb-4 ms-4 mt-4 navSide-item ">
@@ -75,7 +39,7 @@
       </button>
     </div>
   </div>
-  <div class="col-lg-6">
+  <div class="col-lg-6"> -->
     <!-- <div class="row">
       <div class="col-lg-6 mt-4">
         <h3 class="dash mt-3 ms-3">Security cam cloud</h3>
@@ -185,7 +149,7 @@
                       <div class="col-md-12 mt-4">
                         <label >End Trip</label>
 
-                          <input class="form-control mt-2 table" type="text" formControlName="enddate" placeholder="End Trip" [(ngModel)]="enddate" required>
+                          <input class="form-control mt-2 table" type="date" formControlName="enddate" placeholder="End Trip" [(ngModel)]="enddate" required>
 
                       </div>
 
@@ -334,10 +298,10 @@
 
 
 
-</div>
+<!-- </div>
 
 
-</div>
+</div> -->
 
 
 

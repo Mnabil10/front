@@ -28,6 +28,15 @@ import {VgBufferingModule} from '@videogular/ngx-videogular/buffering';
 import {AngularBotModule} from './angular-bot/angular-bot.module';
 import { CommonModule } from '@angular/common';
 import { NgxCsvParserModule } from 'ngx-csv-parser';
+import { NavbarComponent } from './navbar/navbar.component';
+import { ReportComponent } from './report/report.component';
+import { DashbordComponent } from './dashbord/dashbord.component';
+import { NavsideComponent } from './navside/navside.component';
+import { RepcontainerComponent } from './repcontainer/repcontainer.component';
+import { RepcompnyComponent } from './repcompny/repcompny.component';
+import { RepSourceComponent } from './rep-source/rep-source.component';
+import { RepUserComponent } from './rep-user/rep-user.component';
+import { RepDestComponent } from './rep-dest/rep-dest.component';
 
 
 @NgModule({
@@ -42,6 +51,15 @@ import { NgxCsvParserModule } from 'ngx-csv-parser';
     ErrorComponent,
     FooterComponent,
     ChatComponent,
+    NavbarComponent,
+    ReportComponent,
+    DashbordComponent,
+    NavsideComponent,
+    RepcontainerComponent,
+    RepcompnyComponent,
+    RepSourceComponent,
+    RepUserComponent,
+    RepDestComponent,
 
   ],
   imports: [

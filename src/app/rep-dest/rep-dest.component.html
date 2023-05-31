@@ -1,0 +1,101 @@
+<div class="col-md-12 col-lg-12 col-sm-12"><app-navbar></app-navbar></div>
+<div class="row">
+  <div class="col-md-3 col-lg-2 col-sm-12">
+    <app-navside></app-navside>
+  </div>
+  <div class="col-md-9 col-lg-10 ">
+    <div  class="mt-5 ms-2">
+      <h1  class="mt-2 ms-2">Report by Rem IP </h1>
+      <p class="mt-2 ms-2">Welcome to Tangier port management platform.</p>
+    </div>
+
+   <div class="ms-2 mt-3">
+    <app-report></app-report>
+   </div>
+    <div class="col-md-12 col-sm-12 col-lg-10 ms-2 mt-3 ">
+      <form action="#" [formGroup]="addForm" class="">
+        <div class="d-flex">
+          <div class="col-md-12 col-lg-3  me-4">
+          <label >Start Date</label>
+
+           <input class="form-control  table" type="text" formControlName="startdate" placeholder="Start Date"[(ngModel)]="startdate" required>
+
+        </div>
+
+        <div class="col-md-12 col-lg-3  me-4">
+          <label >End Date</label>
+
+            <input class="form-control  table" type="text" formControlName="enddate" placeholder="End Date" [(ngModel)]="enddate" required>
+
+        </div>
+
+
+
+
+
+       <div class="col-md-12 col-lg-3  me-4">
+        <label >remIp</label>
+          <input class="form-control  table" type="text" formControlName="remIp" placeholder="remIp" [(ngModel)]="remIp" required>
+       </div>
+        <div class="form-button mt-3 col-lg-2">
+            <button  (click)="getData(startdate,enddate,remIp)" class="btn btn-danger">Search</button>
+        </div></div>
+
+    </form>
+    </div>
+    <div *ngIf="data" class="col-md-12 col-lg-9 col-sm-12 ms-3 mt-3 showdata">
+      <div class="d-flex justify-content-between">
+        <div>
+          <h2 class="mt-2 ms-2 mb-4">remIp Info</h2>
+        </div>
+        <div class="form-button mt-2 me-2 mb-4">
+          <button class="btn btn-danger"><a href="http://10.10.99.13:3000/api/v1/report/byRemIp/?startDate={{startdate}}&endDate={{enddate}}&byRemIp={{remIp}}" target="_blank" style=" color: white;  text-decoration: none">Export</a></button>
+      </div>
+      </div>
+      <div class="mb-5">
+
+        <table class="table table-hover">
+          <thead>
+              <tr>
+                  <th class="tablehead text-center col-lg-2" scope="col">datetime</th>
+                  <th class="tablehead text-center col-lg-2" scope="col">itime</th>
+                  <th class="tablehead text-center col-lg-2" scope="col">date</th>
+                  <th class="tablehead text-center col-lg-2" scope="col">time</th>
+                  <th class="tablehead text-center col-lg-2" scope="col">devid</th>
+                  <th class="tablehead text-center col-lg-2" scope="col">vd</th>
+                  <th class="tablehead text-center col-lg-2" scope="col">type</th>
+                  <th class="tablehead text-center col-lg-2" scope="col">subtype</th>
+                  <th class="tablehead text-center col-lg-2" scope="col">action</th>
+                  <th class="tablehead text-center col-lg-2" scope="col">devname</th>
+                  <th class="tablehead text-center col-lg-2" scope="col">dtime</th>
+
+              </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor="let move of data.data">
+                  <td class="tablebody text-center col-lg-2">{{move.datetime}}</td>
+                  <td class="tablebody text-center col-lg-2">{{move.itime}}</td>
+                  <td class="tablebody text-center col-lg-2">{{move.date}}</td>
+                  <td class="tablebody text-center col-lg-2">{{move.time}}</td>
+                  <td class="tablebody text-center col-lg-2">{{move.devid}}</td>
+                  <td class="tablebody text-center col-lg-2">{{move.vd}} </td>
+                  <td class="tablebody text-center col-lg-2">{{move.type}}</td>
+                  <td class="tablebody text-center col-lg-2">{{move.subtype}}</td>
+                  <td class="tablebody text-center col-lg-2">{{move.action}}</td>
+                  <td class="tablebody text-center col-lg-2">{{move.devname}}</td>
+                  <td class="tablebody text-center col-lg-2">{{move.dtime}}</td>
+
+
+              </tr>
+          </tbody>
+      </table>
+
+      </div>
+    </div>
+
+
+
+  </div>
+</div>
+<!-- <app-footer class=""></app-footer> -->
+

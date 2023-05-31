@@ -1,0 +1,51 @@
+.tablehead{
+  font-size: 16px;
+line-height: 24px;
+/* or 96% */
+
+
+color: #FFFFFF;
+background: #DB8F92;
+border-right: 1px black solid;
+}
+.tablebody{
+  font-size: 16px;
+line-height: 24px;
+/* or 96% */
+
+
+color: black;
+background: #FFFFFF;
+border-right: 1px black solid;
+}
+table{
+  border: 1px rgb(67, 67, 67) solid;
+  border-radius: 50%;
+}
+.showdata{
+  border: 1px rgba(0, 0, 0, 0.13) solid;
+}
+h1{
+  font-size: 25px;
+line-height: 24px;
+/* identical to box height, or 96% */
+
+
+color: #B82026;
+}
+p{
+  font-size: 20px;
+line-height: 24px;
+/* identical to box height, or 120% */
+
+
+color: #6E6B7B;
+}
+h2{
+  font-size: 20px;
+line-height: 24px;
+/* identical to box height, or 80% */
+
+
+color: #000000;
+}

@@ -1,0 +1,224 @@
+<div class="col-md-12 col-lg-12 col-sm-12"><app-navbar></app-navbar></div>
+<div class="row">
+  <div class="col-md-3 col-lg-2 col-sm-12">
+    <app-navside></app-navside>
+  </div>
+  <div class="col-md-9 col-lg-10 ">
+    <div  class="mt-5 ms-2">
+      <h1  class="mt-2 ms-2">Report by Container ID </h1>
+      <p class="mt-2 ms-2">Welcome to Tangier port management platform.</p>
+    </div>
+
+    <div class="col-mid-12 col-lg-12 col-sm-12 mt-3 ms-3">
+      <h2>click for Report</h2>
+      <app-report></app-report>
+    </div>
+    <div class="col-md-12 col-sm-12 col-lg-10 ms-2 mt-3 ">
+      <form action="#" [formGroup]="addForm" class="">
+        <div class="d-flex">
+          <div class="col-md-12 col-lg-3  me-4">
+          <label >Start Date</label>
+
+           <input class="form-control  table" type="date" formControlName="startdate" placeholder="Start Date"[(ngModel)]="startdate" required>
+
+        </div>
+
+        <div class="col-md-12 col-lg-3  me-4">
+          <label >End Date</label>
+
+            <input class="form-control  table" type="date" formControlName="enddate" placeholder="End Date" [(ngModel)]="enddate" required>
+
+        </div>
+
+
+
+
+
+       <div class="col-md-12 col-lg-3  me-4">
+        <label >Container Id</label>
+          <input class="form-control  table" type="text" formControlName="container" placeholder="ContainerID" [(ngModel)]="container" required>
+       </div>
+        <div class="form-button mt-3 col-lg-2">
+            <button  (click)="getData(startdate,enddate,container)" class="btn btn-danger">Search</button>
+        </div></div>
+
+    </form>
+    </div>
+    <div *ngIf="data" class="col-md-12 col-lg-9 col-sm-12 ms-3 mt-3 showdata">
+      <div class="d-flex justify-content-between">
+        <div>
+          <h2 class="mt-2 ms-2 mb-4">Container Info</h2>
+        </div>
+        <div class="form-button mt-2 me-2 mb-4">
+          <button class="btn btn-danger"><a href="http://10.10.99.13:3000/api/v1/report/byContainerId/?startDate={{startdate}}&endDate={{enddate}}&containerId={{container}}" target="_blank" style=" color: white;  text-decoration: none">Export</a></button>
+      </div>
+      </div>
+      <div class="table mb-4">
+        <table  class="table text-center  table-hover">
+          <tbody>
+
+              <tr>
+                        <td   class="text-center tablehead col-lg-2 col-md-12 col-sm-12">Container ID</td>
+                        <td   class="text-center tablebody col-lg-2 col-md-12 col-sm-12">{{data.data.id}}</td>
+                        <td   class="text-center tablehead col-lg-2 col-md-12 col-sm-12">Estimated Departure</td>
+                        <td   class="text-center tablebody col-lg-2 col-md-12 col-sm-12">{{data.data.estimatedDeparture}}</td>
+
+
+
+                        </tr>
+                        <tr>
+                          <td   class="text-center tablehead col-lg-2 col-md-12 col-sm-12">Start Date</td>
+                          <td   class="text-center tablebody col-lg-2 col-md-12 col-sm-12">{{data.data.debarqDate}}</td>
+                          <td   class="text-center tablehead col-lg-2 col-md-12 col-sm-12">Container Content</td>
+                          <td   class="text-center tablebody col-lg-2 col-md-12 col-sm-12">{{data.data.containerContent}}</td>
+
+
+
+                          </tr>
+                          <tr>
+                            <td   class="text-center tablehead col-lg-2 col-md-12 col-sm-12">End Date</td>
+                            <td   class="text-center tablebody col-lg-2 col-md-12 col-sm-12">{{data.data.embarqDate}}</td>
+                            <td   class="text-center tablehead col-lg-2 col-md-12 col-sm-12">Container Dimensions</td>
+                            <td   class="text-center tablebody col-lg-2 col-md-12 col-sm-12">{{data.data.containerDimensions}}</td>
+
+
+
+                            </tr>
+                            <tr>
+                              <td   class="text-center tablehead col-lg-2 col-md-12 col-sm-12">Container tare Weight</td>
+                              <td   class="text-center tablebody col-lg-2 col-md-12 col-sm-12">{{data.data.containerTare}}</td>
+                              <td   class="text-center tablehead col-lg-2 col-md-12 col-sm-12">Dangerous Container Indictor</td>
+                              <td   class="text-center tablebody col-lg-2 col-md-12 col-sm-12">{{data.data.dangerousContainerIndictor}}</td>
+
+
+
+                              </tr>
+                              <tr>
+                                <td   class="text-center tablehead col-lg-2 col-md-12 col-sm-12">Container Gross Weight</td>
+                                <td   class="text-center tablebody col-lg-2 col-md-12 col-sm-12">{{data.data.grossWeight}}</td>
+                                <td   class="text-center tablehead col-lg-2 col-md-12 col-sm-12">Bill Of Lading</td>
+                                <td   class="text-center tablebody col-lg-2 col-md-12 col-sm-12">{{data.data.billOfLading}}</td>
+
+
+
+                                </tr>
+                                <tr>
+                                  <td   class="text-center tablehead col-lg-2 col-md-12 col-sm-12">Container Certified Weight</td>
+                                  <td   class="text-center tablebody col-lg-2 col-md-12 col-sm-12">{{data.data.certifiedWeight}}</td>
+                                  <td   class="text-center tablehead col-lg-2 col-md-12 col-sm-12">Manifest</td>
+                                  <td   class="text-center tablebody col-lg-2 col-md-12 col-sm-12">{{data.data.manifest}}</td>
+
+
+
+                                  </tr>
+                                  <tr>
+                                    <td   class="text-center tablehead col-lg-2 col-md-12 col-sm-12">Fridge Indicator </td>
+                                    <td   class="text-center tablebody col-lg-2 col-md-12 col-sm-12">{{data.data.fridgeIndicator}}</td>
+                                    <td   class="text-center tablehead col-lg-2 col-md-12 col-sm-12">Customs Declarations</td>
+                                    <td   class="text-center tablebody col-lg-2 col-md-12 col-sm-12">{{data.data.customsDeclarations}}</td>
+
+
+
+                                    </tr>
+                                    <tr>
+                                      <td   class="text-center tablehead col-lg-2 col-md-12 col-sm-12">Inlet Temperature</td>
+                                      <td   class="text-center tablebody col-lg-2 col-md-12 col-sm-12">{{data.data.inletTemperature}}</td>
+                                      <td   class="text-center tablehead col-lg-2 col-md-12 col-sm-12">Debarq Vessel Name</td>
+                                      <td   class="text-center tablebody col-lg-2 col-md-12 col-sm-12">{{data.data.debarqVesselName}}</td>
+
+
+
+                                      </tr>
+                                      <tr>
+                                        <td   class="text-center tablehead col-lg-2 col-md-12 col-sm-12">Outlet Temperature</td>
+                                        <td   class="text-center tablebody col-lg-2 col-md-12 col-sm-12">{{data.data.outletTemperature}}</td>
+                                        <td   class="text-center tablehead col-lg-2 col-md-12 col-sm-12">Embarq Vessel Name</td>
+                                        <td   class="text-center tablebody col-lg-2 col-md-12 col-sm-12">{{data.data.embarqVesselName}}</td>
+
+
+
+                                        </tr>
+                                        <tr>
+                                          <td   class="text-center tablehead col-lg-2 col-md-12 col-sm-12">Max Temperature Requested</td>
+                                          <td   class="text-center tablebody col-lg-2 col-md-12 col-sm-12">{{data.data.maxTemperatureRequested}}</td>
+                                          <td   class="text-center tablehead col-lg-2 col-md-12 col-sm-12">Source Country</td>
+                                          <td   class="text-center tablebody col-lg-2 col-md-12 col-sm-12">{{data.data.sourceCountry}}</td>
+
+
+
+                                          </tr>
+                                          <tr>
+                                            <td   class="text-center tablehead col-lg-2 col-md-12 col-sm-12">Min Temperature Requested</td>
+                                            <td   class="text-center tablebody col-lg-2 col-md-12 col-sm-12">{{data.data.minTemperatureRequested}}</td>
+                                            <td   class="text-center tablehead col-lg-2 col-md-12 col-sm-12">Destination Country</td>
+                                            <td   class="text-center tablebody col-lg-2 col-md-12 col-sm-12">{{data.data.destinationCountry}}</td>
+
+
+
+                                            </tr>
+                                            <tr>
+                                              <td   class="text-center tablehead col-lg-2 col-md-12 col-sm-12">Debarq Date</td>
+                                              <td   class="text-center tablebody col-lg-2 col-md-12 col-sm-12">{{data.data.debarqDate}}</td>
+                                              <td   class="text-center tablehead col-lg-2 col-md-12 col-sm-12">Handling Company</td>
+                                              <td   class="text-center tablebody col-lg-2 col-md-12 col-sm-12">{{data.data.handlingCompany}}</td>
+
+
+
+                                              </tr>
+                                              <tr>
+                                                <td   class="text-center tablehead col-lg-2 col-md-12 col-sm-12">Embarq Date</td>
+                                                <td   class="text-center tablebody col-lg-2 col-md-12 col-sm-12">{{data.data.embarqDate}}</td>
+                                                <td   class="text-center tablehead col-lg-2 col-md-12 col-sm-12">Operator</td>
+                                                <td   class="text-center tablebody col-lg-2 col-md-12 col-sm-12">{{data.data.operator}}</td>
+
+
+
+                                                </tr>
+                                                <tr>
+                                                  <td   class="text-center tablehead col-lg-2 col-md-12 col-sm-12">Estimated Arrival</td>
+                                                  <td   class="text-center tablebody col-lg-2 col-md-12 col-sm-12">{{data.data.estimatedArrival}}</td>
+                                                  <td   class="text-center tablehead col-lg-2 col-md-12 col-sm-12"></td>
+                                                  <td   class="text-center tablebody col-lg-2 col-md-12 col-sm-12"></td>
+
+
+
+                                                  </tr>
+            </tbody>
+          </table>
+      </div>
+      <div class="mb-5">
+        <div>
+          <h2 class="mt-2 ms-2 mb-4">Movements Details</h2>
+        </div>
+        <table class="table table-hover">
+          <thead>
+              <tr>
+                  <th class="tablehead text-center col-lg-2" scope="col">code</th>
+                  <th class="tablehead text-center col-lg-2" scope="col">date</th>
+                  <th class="tablehead text-center col-lg-2" scope="col">delay</th>
+                  <th class="tablehead text-center col-lg-2" scope="col">actual Place</th>
+                  <th class="tablehead text-center col-lg-2" scope="col">planned Place</th>
+                  <th class="tablehead text-center col-lg-2" scope="col">creator</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor="let move of data.data.movements">
+                  <td class="tablebody text-center col-lg-2">{{move.code}}</td>
+                  <td class="tablebody text-center col-lg-2">{{move.date}}</td>
+                  <td class="tablebody text-center col-lg-2">{{move.delay}}</td>
+                  <td class="tablebody text-center col-lg-2">{{move.actualPlace}}</td>
+                  <td class="tablebody text-center col-lg-2">{{move.plannedPlace}}</td>
+                  <td class="tablebody text-center col-lg-2">{{move.creator}} </td>
+
+              </tr>
+          </tbody>
+      </table>
+
+      </div>
+    </div>
+
+
+
+  </div>
+</div>
+<!-- <app-footer class=""></app-footer> -->

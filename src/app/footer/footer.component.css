@@ -1,3 +1,9 @@
+.row{
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  background-color: #FFFFFF;
+}
 .copy{
   background: #FFFFFF;
   width: 100%;

@@ -1,0 +1,36 @@
+.navside{
+  width: 100%;
+  height: auto;
+  background: #FFFFFF;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 0px;
+}
+.navSide-item{
+
+  height: 49px;
+  color: #000000;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+.active{
+  color: #B01B1F;
+
+  height: 49px;
+  background: rgba(184, 32, 38, 0.2);
+  border-radius: 0px 8.83405px 8.83405px 0px;
+}
+.logout{
+
+  height: 52px;
+  background: #B71F25;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  border: 1.5px solid #FFFFFF;
+
+}

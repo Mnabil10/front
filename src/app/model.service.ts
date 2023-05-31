@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 export class ModelService {
 
   constructor(private http: HttpClient) { }
-  baseUrl = 'http://localhost:8081/';
+  baseUrl = 'http://10.10.99.13:3000/api/v1/data/';
 
   submit(formInput: FormGroup){
     console.log(formInput.value)
@@ -20,7 +20,7 @@ export class ModelService {
     data.append("trip-start", formInput.value["trip-start"])
     data.append("trip-end", formInput.value["trip-end"])
 
-    return this.http.post(this.baseUrl + "submit", data)
+    return this.http.post(this.baseUrl + "byContainerId", data)
   }
 
 

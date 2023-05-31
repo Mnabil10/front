@@ -1,0 +1,179 @@
+<div class="col-md-12 col-lg-12 col-sm-12"><app-navbar></app-navbar></div>
+<div class="row">
+  <div class="col-md-3 col-lg-2 col-sm-12">
+    <app-navside></app-navside>
+  </div>
+  <div class="col-md-9 col-lg-10 ">
+
+    <div  class="mt-5 ms-2">
+      <h1  class="mt-2 ms-2">Report by UserName </h1>
+      <p class="mt-2 ms-2">Welcome to Tangier port management platform.</p>
+    </div>
+    <div class="col-mid-12 col-lg-12 col-sm-12 mt-3 ms-3">
+      <h2>click for Report</h2>
+      <app-report></app-report>
+    </div>
+
+    <div class="col-md-12 col-sm-12 col-lg-10 ms-2 mt-3 ">
+      <form action="#" [formGroup]="addForm" class="">
+        <div class="d-flex">
+          <div class="col-md-12 col-lg-3  me-4">
+          <label >Start Date</label>
+
+           <input class="form-control  table" type="date" formControlName="startdate" placeholder="Start Date"[(ngModel)]="startdate" required>
+
+        </div>
+
+        <div class="col-md-12 col-lg-3  me-4">
+          <label >End Date</label>
+
+            <input class="form-control  table" type="date" formControlName="enddate" placeholder="End Date" [(ngModel)]="enddate" required>
+
+        </div>
+
+
+
+
+
+       <div class="col-md-12 col-lg-3  me-4">
+        <label >User Name</label>
+          <input class="form-control  table" type="text" formControlName="userName" placeholder="userName" [(ngModel)]="userName" required>
+       </div>
+        <div class="form-button mt-3 col-lg-2">
+            <button  (click)="getData(startdate,enddate,userName)" class="btn btn-danger">Search</button>
+        </div></div>
+
+    </form>
+    </div>
+    <div *ngIf="data" class="col-md-12 col-lg-9 col-sm-12 ms-3 mt-3 showdata">
+      <div class="d-flex justify-content-between">
+        <div>
+          <h2 class="mt-2 ms-2 mb-4">User Info</h2>
+        </div>
+        <div class="form-button mt-2 me-2 mb-4">
+          <button class="btn btn-danger"><a href="http://10.10.99.13:3000/api/v1/report/byUserName/?startDate={{startdate}}&endDate={{enddate}}&userName={{userName}}" target="_blank" style=" color: white;  text-decoration: none">Export</a></button>
+      </div>
+      </div>
+      <div>
+        <h2 class="mt-2 ms-2 mb-4">Firewall Details</h2>
+      </div>
+      <div class="mb-5" >
+
+        <table class="table table-hover">
+          <thead>
+              <tr>
+                  <th class="tablehead text-center col-lg-2" scope="col">date</th>
+                  <th class="tablehead text-center col-lg-2" scope="col">dayofweek</th>
+                  <th class="tablehead text-center col-lg-2" scope="col">login</th>
+                  <th class="tablehead text-center col-lg-2" scope="col">logout</th>
+                  <th class="tablehead text-center col-lg-2" scope="col">duration</th>
+                  <th class="tablehead text-center col-lg-2" scope="col">subtype</th>
+                  <th class="tablehead text-center col-lg-2" scope="col">ip</th>
+                  <th class="tablehead text-center col-lg-2" scope="col">srcport</th>
+                  <th class="tablehead text-center col-lg-2" scope="col">devname</th>
+                  <th class="tablehead text-center col-lg-2" scope="col">user</th>
+                  <th class="tablehead text-center col-lg-2" scope="col">dstip</th>
+                  <th class="tablehead text-center col-lg-2" scope="col">src_country</th>
+                  <th class="tablehead text-center col-lg-2" scope="col">src_city</th>
+                  <th class="tablehead text-center col-lg-2" scope="col">dst_country</th>
+                  <th class="tablehead text-center col-lg-2" scope="col">dst_city</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor="let move of data.data.fw">
+                  <td class="tablebody text-center col-lg-2">{{move.date}}</td>
+                  <td class="tablebody text-center col-lg-2">{{move.dayofweek}}</td>
+                  <td class="tablebody text-center col-lg-2">{{move.login}}</td>
+                  <td class="tablebody text-center col-lg-2">{{move.logout}}</td>
+                  <td class="tablebody text-center col-lg-2">{{move.duration}}</td>
+                  <td class="tablebody text-center col-lg-2">{{move.subtype}} </td>
+                  <td class="tablebody text-center col-lg-2">{{move.ip}} </td>
+                  <td class="tablebody text-center col-lg-2">{{move.srcport}} </td>
+                  <td class="tablebody text-center col-lg-2">{{move.devname}} </td>
+                  <td class="tablebody text-center col-lg-2">{{move.user}} </td>
+                  <td class="tablebody text-center col-lg-2">{{move.dstip}} </td>
+                  <td class="tablebody text-center col-lg-2">{{move.src_country}} </td>
+                  <td class="tablebody text-center col-lg-2">{{move.src_city}} </td>
+                  <td class="tablebody text-center col-lg-2">{{move.dst_country}} </td>
+                  <td class="tablebody text-center col-lg-2">{{move.dst_city}} </td>
+
+
+              </tr>
+          </tbody>
+      </table>
+
+      </div>
+      <div>
+        <h2 class="mt-2 ms-2 mb-4">http Details</h2>
+      </div>
+      <div class="mb-5" style="overflow-y:scroll; height: 450px;">
+
+        <table class="table table-hover">
+          <thead>
+              <tr>
+                  <th class="tablehead text-center col-lg-2" scope="col">DATE</th>
+                  <th class="tablehead text-center col-lg-2" scope="col">IP</th>
+                  <th class="tablehead text-center col-lg-2" scope="col">USER</th>
+                  <th class="tablehead text-center col-lg-2" scope="col">CONT</th>
+                  <th class="tablehead text-center col-lg-2" scope="col">LOGIN</th>
+                  <th class="tablehead text-center col-lg-2" scope="col">LOGOUT</th>
+                  <th class="tablehead text-center col-lg-2" scope="col">DURATION</th>
+                  <th class="tablehead text-center col-lg-2" scope="col">WEEKDAY</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor="let move of data.data.http">
+                  <td class="tablebody text-center col-lg-2">{{move.DATE}}</td>
+                  <td class="tablebody text-center col-lg-2">{{move.IP}}</td>
+                  <td class="tablebody text-center col-lg-2">{{move.USER}}</td>
+                  <td class="tablebody text-center col-lg-2">{{move.CONT}}</td>
+                  <td class="tablebody text-center col-lg-2">{{move.LOGIN}}</td>
+                  <td class="tablebody text-center col-lg-2">{{move.LOGOUT}} </td>
+                  <td class="tablebody text-center col-lg-2">{{move.DURATION}} </td>
+                  <td class="tablebody text-center col-lg-2">{{move.WEEKDAY}} </td>
+
+              </tr>
+          </tbody>
+      </table>
+
+      </div>
+      <div class="mb-5">
+        <div>
+          <h2 class="mt-2 ms-2 mb-4">Movements Details</h2>
+        </div>
+        <div class="mb-5" style="overflow-y:scroll; height: 450px;">
+          <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th class="tablehead text-center col-lg-2" scope="col">code</th>
+                    <th class="tablehead text-center col-lg-2" scope="col">date</th>
+
+                    <th class="tablehead text-center col-lg-2" scope="col">actual Place</th>
+                    <th class="tablehead text-center col-lg-2" scope="col">planned Place</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let move of data.data.movements">
+                    <td class="tablebody text-center col-lg-2">{{move.code}}</td>
+                    <td class="tablebody text-center col-lg-2">{{move.date}}</td>
+
+                    <td class="tablebody text-center col-lg-2">{{move.actualPlace}}</td>
+                    <td class="tablebody text-center col-lg-2">{{move.plannedPlace}}</td>
+
+
+                </tr>
+            </tbody>
+        </table>
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+  </div>
+</div>
+<!-- <app-footer class=""></app-footer> -->
+
