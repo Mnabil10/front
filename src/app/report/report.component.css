@@ -152,23 +152,54 @@ li{
   font-size: 30px
 } */
 
-menu1 {
-  left: 50%;
+.circle-menu li {
+  list-style: none;
+  display: inline;
+}
+
+.circle-menu {
+    position: relative;
+    width: 24em;
+    height: 24em;
+    border: dashed 2px #cccccc;
+    border-radius: 50%;
+    margin: 5em auto 7em;
+}
+.circle-menu a {
+  display: block;
+  position: absolute;
   top: 50%;
+  left: 50%;
+  width: 8em; height: 8em;
+  line-height:8em;
+  margin: -3.5em;
+  -moz-border-radius: 4em;
+  -webkit-border-radius: 4em;
+  border-radius: 4em;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  box-sizing: border-box;
 }
 
-.my-icon {
-  background: url("https://rawgit.com/yandongCoder/circular-menu/master/examples/circular-menu.png");
-}
+.circle-menu a.spiritual {background:#009cde;opacity: 0.6;}
+.circle-menu a.occupational {background:#3a913f;opacity: 0.6;}
+.circle-menu a.emotional {background:#fecd06;opacity: 0.6;}
+.circle-menu a.environmental {background:#fa7f00;opacity: 0.6;}
+.circle-menu a.intellectual {background:#ed2124;opacity: 0.6;}
 
-.icon1 {
-  background-position: 0 0;
-}
 
-.icon2 {
-  background-position: 0 -56px;
-}
+.circle-menu a.spiritual:hover {background:#009cde;opacity: 1.0;}
+.circle-menu a.occupational:hover {background:#3a913f;opacity: 1.0;}
+.circle-menu a.emotional:hover {background:#fecd06;opacity: 1.0;}
+.circle-menu a.environmental:hover {background:#fa7f00;opacity: 1.0;}
+.circle-menu a.intellectual:hover {background:#ed2124;opacity: 1.0;}
 
-.icon3 {
-  background-position: 0 -116px;
-}
+
+
+ /* 360/7= 51 roughly so for 7 elements rotate the element every 51deg. 12em translate is half the container */
+.circle-menu .spiritual { transform: rotate(40deg) translate(12em) rotate(-40deg); -webkit-transform: rotate(40deg) translate(12em) rotate(-40deg); -ms-transform: rotate(40deg) translate(12em) rotate(-40deg);}
+.circle-menu .occupational { transform: rotate(110deg) translate(12em) rotate(-110deg); -webkit-transform: rotate(110deg) translate(12em) rotate(-110deg); -ms-transform: rotate(110deg) translate(12em) rotate(-110deg);}
+.circle-menu .emotional { transform: rotate(180deg) translate(12em) rotate(-180deg); -webkit-transform: rotate(180deg) translate(12em) rotate(-180deg); -ms-transform: rotate(180deg) translate(12em) rotate(-180deg);}
+.circle-menu .environmental { transform: rotate(250deg) translate(12em) rotate(-250deg); -webkit-transform: rotate(250deg) translate(12em) rotate(-250deg); -ms-transform:rotate(250deg) translate(12em) rotate(-250deg);}
+.circle-menu .intellectual { transform: rotate(320deg) translate(12em) rotate(-320deg); -webkit-transform: rotate(320deg) translate(12em) rotate(-320deg); -ms-transform: rotate(320deg) translate(12em) rotate(-320eg);}

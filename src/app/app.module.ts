@@ -39,6 +39,7 @@ import { RepUserComponent } from './rep-user/rep-user.component';
 import { RepDestComponent } from './rep-dest/rep-dest.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -69,6 +70,7 @@ import { RepDestComponent } from './rep-dest/rep-dest.component';
     ReactiveFormsModule,
     HttpClientModule,
     FormsModule,
+
     TranslateModule.forRoot({
       loader:{
         provide:TranslateLoader,

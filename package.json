@@ -26,6 +26,8 @@
     "@popperjs/core": "^2.10.2",
     "@videogular/ngx-videogular": "^6.0.0",
     "bootstrap": "^5.2.3",
+    "circular-menu": "^1.0.6",
+    "ng-circle-progress": "^1.7.1",
     "ngx-bootstrap": "^0.0.1",
     "ngx-csv-parser": "^1.2.0",
     "rxjs": "~7.5.0",
