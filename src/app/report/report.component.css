@@ -54,7 +54,7 @@ li{
   transform: rotate(70deg) translateX(-110px);
 }
 .menu-toggler:checked ~ ul .menu-item:nth-child(3) {
-  transform: rotate(140deg) translateX(-110px);
+  transform: rotate(160deg) translateX(-110px);
 }
 .menu-toggler:checked ~ ul .menu-item:nth-child(4) {
   transform: rotate(210deg) translateX(-110px);
@@ -109,7 +109,7 @@ li{
   transform: rotate(-70deg);
 }
 .menu-item:nth-child(3) a {
-  transform: rotate(-140deg);
+  transform: rotate(-160deg);
 }
 .menu-item:nth-child(4) a {
   transform: rotate(-210deg);
@@ -159,10 +159,9 @@ li{
 
 .circle-menu {
     position: relative;
-    width: 24em;
-    height: 24em;
-    border: dashed 2px #cccccc;
-    border-radius: 50%;
+    width: 14em;
+    height: 14em;
+
     margin: 5em auto 7em;
 }
 .circle-menu a {
@@ -170,8 +169,8 @@ li{
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 8em; height: 8em;
-  line-height:8em;
+  width: 12em; height: 12em;
+
   margin: -3.5em;
   -moz-border-radius: 4em;
   -webkit-border-radius: 4em;
@@ -181,8 +180,26 @@ li{
   color: white;
   box-sizing: border-box;
 }
+.circle-menu a img {
+  display: block;
+  width: 12em; height: 12em;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  box-sizing: border-box;
+  z-index: 1;
+}
+.circle-menu a img.sp {
+  display: block;
+  width: 2em; height: 2em;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  box-sizing: border-box;
+  z-index: 3;
+}
 
-.circle-menu a.spiritual {background:#009cde;opacity: 0.6;}
+/* .circle-menu a.spiritual {background:#009cde;opacity: 0.6;}
 .circle-menu a.occupational {background:#3a913f;opacity: 0.6;}
 .circle-menu a.emotional {background:#fecd06;opacity: 0.6;}
 .circle-menu a.environmental {background:#fa7f00;opacity: 0.6;}
@@ -193,13 +210,14 @@ li{
 .circle-menu a.occupational:hover {background:#3a913f;opacity: 1.0;}
 .circle-menu a.emotional:hover {background:#fecd06;opacity: 1.0;}
 .circle-menu a.environmental:hover {background:#fa7f00;opacity: 1.0;}
-.circle-menu a.intellectual:hover {background:#ed2124;opacity: 1.0;}
+.circle-menu a.intellectual:hover {background:#ed2124;opacity: 1.0;} */
 
 
 
- /* 360/7= 51 roughly so for 7 elements rotate the element every 51deg. 12em translate is half the container */
-.circle-menu .spiritual { transform: rotate(40deg) translate(12em) rotate(-40deg); -webkit-transform: rotate(40deg) translate(12em) rotate(-40deg); -ms-transform: rotate(40deg) translate(12em) rotate(-40deg);}
-.circle-menu .occupational { transform: rotate(110deg) translate(12em) rotate(-110deg); -webkit-transform: rotate(110deg) translate(12em) rotate(-110deg); -ms-transform: rotate(110deg) translate(12em) rotate(-110deg);}
-.circle-menu .emotional { transform: rotate(180deg) translate(12em) rotate(-180deg); -webkit-transform: rotate(180deg) translate(12em) rotate(-180deg); -ms-transform: rotate(180deg) translate(12em) rotate(-180deg);}
-.circle-menu .environmental { transform: rotate(250deg) translate(12em) rotate(-250deg); -webkit-transform: rotate(250deg) translate(12em) rotate(-250deg); -ms-transform:rotate(250deg) translate(12em) rotate(-250deg);}
-.circle-menu .intellectual { transform: rotate(320deg) translate(12em) rotate(-320deg); -webkit-transform: rotate(320deg) translate(12em) rotate(-320deg); -ms-transform: rotate(320deg) translate(12em) rotate(-320eg);}
+ /* 360/7= 51 roughly so for 7 elements rotate the element every 51deg. 10em translate is half the container */
+ .circle-menu .sp { transform: rotate(0deg) translate(0em) rotate(0deg);}
+.circle-menu .spiritual { transform: rotate(72deg) translate(6em) rotate(-72deg);}
+.circle-menu .occupational { transform: rotate(144deg) translate(6em) rotate(-144deg); }
+.circle-menu .emotional { transform: rotate(216deg) translate(6em) rotate(-216deg); }
+.circle-menu .environmental { transform: rotate(288deg) translate(6em) rotate(-288deg); }
+.circle-menu .intellectual { transform: rotate(360deg) translate(6em) rotate(-360deg);}
