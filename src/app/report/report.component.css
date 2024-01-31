@@ -152,10 +152,23 @@ li{
   font-size: 30px
 } */
 
+
+/* Original */
 .circle-menu li {
   list-style: none;
   display: inline;
 }
+
+/* .circle-menu li {
+  position: absolute;
+  width: 3em;
+  height: 3em;
+  line-height: 3em;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.5s ease-in-out, margin-top 0.5s ease-in-out, margin-left 0.5s ease-in-out;  /* initially hidden */
 
 .circle-menu {
     position: relative;
@@ -215,9 +228,130 @@ li{
 
 
  /* 360/7= 51 roughly so for 7 elements rotate the element every 51deg. 10em translate is half the container */
- .circle-menu .sp { transform: rotate(0deg) translate(0em) rotate(0deg);}
+.circle-menu .sp { transform: rotate(0deg) translate(0em) rotate(0deg);}
 .circle-menu .spiritual { transform: rotate(72deg) translate(6em) rotate(-72deg);}
 .circle-menu .occupational { transform: rotate(144deg) translate(6em) rotate(-144deg); }
 .circle-menu .emotional { transform: rotate(216deg) translate(6em) rotate(-216deg); }
 .circle-menu .environmental { transform: rotate(288deg) translate(6em) rotate(-288deg); }
 .circle-menu .intellectual { transform: rotate(360deg) translate(6em) rotate(-360deg);}
+
+/* a.active:active .active img {
+  width: 1000%;
+  height: 1000%;
+  color: red;
+}
+
+a.active:active {
+  width: 1000%;
+  height: 1000%;
+  color: red;
+} */
+
+/* .active:active img {
+  opacity: 0.5;
+  border: 2px solid red;
+}
+*/
+
+.circle-menu .spiritual:active {
+  transform: rotate(72deg) translate(7em) rotate(-72deg);
+  transition: transform 0.5s ease-in-out; /* transition added */
+}
+
+.circle-menu .occupational:active {
+  transform: rotate(144deg) translate(7em) rotate(-144deg);
+  transition: transform 0.5s ease-in-out; /* transition added */
+}
+
+.circle-menu .emotional:active {
+  transform: rotate(216deg) translate(7em) rotate(-216deg);
+  transition: transform 0.5s ease-in-out; /* transition added */
+}
+
+.circle-menu .environmental:active {
+  transform: rotate(288deg) translate(7em) rotate(-288deg);
+  transition: transform 0.5s ease-in-out; /* transition added */
+}
+
+.circle-menu .intellectual:active {
+  transform: rotate(360deg) translate(7em) rotate(-360deg);
+  transition: transform 0.5s ease-in-out; /* transition added */
+}
+
+/* original hover */
+
+.circle-menu .spiritual:hover  { transform: rotate(72deg) translate(7em) rotate(-72deg); resize: '.5'; transition: transform 0.5s ease-in-out }
+.circle-menu .occupational:hover  { transform: rotate(144deg) translate(7em) rotate(-144deg); resize: '.5'; transition: transform 0.5s ease-in-out }
+.circle-menu .emotional:hover  { transform: rotate(216deg) translate(7em) rotate(-216deg);  resize: '.5'; transition: transform 0.5s ease-in-out}
+.circle-menu .environmental:hover  { transform: rotate(288deg) translate(7em) rotate(-288deg); resize: '.5'; transition: transform 0.5s ease-in-out }
+.circle-menu .intellectual:hover  { transform: rotate(360deg) translate(7em) rotate(-360deg); resize: '.5'; transition: transform 0.5s ease-in-out} 
+
+.circle-menu a.spiritual:visited  { transform: rotate(72deg) translate(8em) rotate(-72deg); resize: '.5'; transition: transform 0.5s ease-in-out }
+.circle-menu a.occupational:visited  { transform: rotate(144deg) translate(8em) rotate(-144deg); resize: '.5'; transition: transform 0.5s ease-in-out }
+.circle-menu a.emotional:visited  { transform: rotate(216deg) translate(8em) rotate(-216deg);  resize: '.5'; transition: transform 0.5s ease-in-out}
+.circle-menu a.environmental:visited  { transform: rotate(288deg) translate(7em) rotate(-288deg); resize: '.5'; transition: transform 0.5s ease-in-out }
+.circle-menu a.intellectual:visited  { transform: rotate(360deg) translate(7em) rotate(-360deg); resize: '.5'; transition: transform 0.5s ease-in-out} 
+
+
+.circle-menu.rotate {
+  animation: rotate 1s linear forwards;
+}
+
+@keyframes rotate {
+  0%{
+    display: none;
+    opacity: 0;
+    /* transform: rotate(90deg);  */
+  }
+
+  /* 50% {
+
+    transform: rotate(0deg);
+
+  } */
+  10% {
+    transition: transform 5s ease-in-out;
+    opacity: 10%;
+    /*transform: rotate(180deg); /* rotate 2 full circles */
+
+  }
+  20% {
+    transition: transform 5s ease-in-out;
+    opacity: 20%;
+
+  }
+  30% {
+    transition: transform 5s ease-in-out;
+    opacity: 30%;
+
+  }
+  50% {
+    transition: transform 5s ease-in-out;
+    opacity: 40%;
+
+  }
+  60% {
+    transition: transform 5s ease-in-out;
+    opacity: 60%;
+
+  }
+  70% {
+    transition: transform 5s ease-in-out;
+    opacity: 70%;
+
+  }
+  80% {
+    transition: transform 5s ease-in-out;
+    opacity: 80%;
+
+  }
+  90% {
+    transition: transform 5s ease-in-out;
+    opacity: 90%;
+  }
+  100% {
+    transition: transform 5s ease-in-out;
+    opacity: 100%;
+
+  }
+}

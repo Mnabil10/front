@@ -5,25 +5,18 @@
   </div>
   <div class="col-md-9 col-lg-10 ">
     <div  class="mt-5 ms-2">
-      <h1  class="mt-2 ms-2">Report by Container ID </h1>
-      <p class="mt-2 ms-2">Welcome to Tangier port management platform.</p>
+      <h1  class="mt-2 ms-2">Container Analysis</h1>
+      <p class="mt-2 ms-2">Please enter a Container Id and valid start and end date</p>
     </div>
-    <div class="col-mid-12 col-lg-4 col-sm-12 mt-3  d-flex justify-content-center  ">
-
-
-      <app-report></app-report>
-
-
-
+    <div class="col-mid-12 col-lg-9 col-sm-12 mt-3  d-flex justify-content-center ">
+      <app-report1></app-report1>
   </div>
-    <div class="col-md-12 col-sm-12 col-lg-10 ms-2 mt-3 ">
+    <div class="col-md-12 col-sm-12 col-lg-12 ms-2 mt-3 ">
       <form action="#" [formGroup]="addForm" class="">
         <div class="d-flex">
           <div class="col-md-12 col-lg-3  me-4">
           <label >Start Date</label>
-
            <input class="form-control  table" type="date" formControlName="startdate" placeholder="Start Date"[(ngModel)]="startdate" required>
-
         </div>
 
         <div class="col-md-12 col-lg-3  me-4">
@@ -32,10 +25,6 @@
             <input class="form-control  table" type="date" formControlName="enddate" placeholder="End Date" [(ngModel)]="enddate" required>
 
         </div>
-
-
-
-
 
        <div class="col-md-12 col-lg-3  me-4">
         <label >Container Id</label>

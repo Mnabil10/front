@@ -1,0 +1,19 @@
+.nav-link{
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height, or 96% */
+
+
+  color: black;
+  border:1.5px solid #B71F25;
+}
+.active{
+  color: white;
+
+  height: 49px;
+  background: #DA7C7C;
+
+}
+.navbar-nav{
+
+}

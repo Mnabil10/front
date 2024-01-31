@@ -37,6 +37,13 @@ import { RepcompnyComponent } from './repcompny/repcompny.component';
 import { RepSourceComponent } from './rep-source/rep-source.component';
 import { RepUserComponent } from './rep-user/rep-user.component';
 import { RepDestComponent } from './rep-dest/rep-dest.component';
+import { HomeComponent } from './home/home.component';
+import { Report1Component } from './report1/report1.component';
+import { Cam1Component } from './cam1/cam1.component';
+import { Cam2Component } from './cam2/cam2.component';
+import { Cam3Component } from './cam3/cam3.component';
+import { Cam4Component } from './cam4/cam4.component';
+import { VideonavComponent } from './videonav/videonav.component';
 
 
 
@@ -61,6 +68,8 @@ import { RepDestComponent } from './rep-dest/rep-dest.component';
     RepSourceComponent,
     RepUserComponent,
     RepDestComponent,
+    HomeComponent,
+    Report1Component,Cam1Component,Cam2Component,Cam3Component,Cam4Component,VideonavComponent
 
   ],
   imports: [

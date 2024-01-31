@@ -11,6 +11,10 @@ export class ReportComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+    const circleMenu = document.querySelector('.circle-menu') as Element;
+    circleMenu.classList.add('rotate');
+
   }
   // menuItems = [
   //   {

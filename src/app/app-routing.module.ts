@@ -15,17 +15,27 @@ import { RepcontainerComponent } from './repcontainer/repcontainer.component';
 import { ReportComponent } from './report/report.component';
 import { SecurityComponent } from './security/security.component';
 import { VTTComponent } from './vtt/vtt.component';
+import { HomeComponent } from './home/home.component';
+import { Cam1Component } from './cam1/cam1.component';
+import { Cam2Component } from './cam2/cam2.component';
+import { Cam3Component } from './cam3/cam3.component';
+import { Cam4Component } from './cam4/cam4.component';
 
 const routes: Routes = [
-   { path: '', component: DashbordComponent, canActivate: [AuthGuardService] },
-   {path: 'report', component:ReportComponent, canActivate: [AuthGuardService]},
-   { path: 'repContainer', component: RepcontainerComponent, canActivate: [AuthGuardService] },
-   { path: 'repDestination', component: RepDestComponent, canActivate: [AuthGuardService] },
-   { path: 'repSource', component: RepSourceComponent, canActivate: [AuthGuardService] },
-   { path: 'repUsername', component: RepUserComponent, canActivate: [AuthGuardService] },
-   { path: 'repCompany', component: RepcompnyComponent, canActivate: [AuthGuardService] },
-  { path: 'login', component: LoginComponent },
-  { path: 'register', component: RegisterComponent },
+   { path: '', component: HomeComponent, },
+   { path: 'dashboard', component: DashbordComponent, },
+   {path: 'report', component:ReportComponent,},
+   { path: 'repContainer', component: RepcontainerComponent, },
+   { path: 'repDestination', component: RepDestComponent, },
+   { path: 'repSource', component: RepSourceComponent, },
+   { path: 'repUsername', component: RepUserComponent, },
+   { path: 'repCompany', component: RepcompnyComponent, },
+   { path: 'cam1', component: Cam1Component, },
+   { path: 'cam2', component: Cam2Component, },
+   { path: 'cam3', component: Cam3Component, },
+   { path: 'cam4', component: Cam4Component, },
+  // { path: 'login', component: LoginComponent },
+  // { path: 'register', component: RegisterComponent },
   // { path: 'check', component: SecurityComponent, canActivate: [AuthGuardService] },
   // { path: 'http', component: VTTComponent, canActivate: [AuthGuardService]},
   // { path: 'Movement', component: CompanyComponent, canActivate: [AuthGuardService] },
