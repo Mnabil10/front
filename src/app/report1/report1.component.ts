@@ -17,9 +17,9 @@ export class Report1Component implements OnInit {
   onCheckboxChange() {
     this.value = !this.value;
     if (this.value) {
-      this.image = '../../assets/image/0bv.png';
+      this.image = '../../assets/image/0.png';
     } else {
-      this.image = '../../assets/image/0bv.png';
+      this.image = '../../assets/image/0.png';
     }
   }
 
